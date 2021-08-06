@@ -1,0 +1,180 @@
+.header{
+    &__top{
+    height: 56px;
+    background-color: $header-bg;
+
+    &__inner{
+        height: inherit;
+        @include flexbox;
+
+        &__left{
+            @include flexbox;
+
+             & > a {
+                font-size: 0.875rem;
+
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+
+                &:hover{
+                    color: $color-white;
+                }
+            }
+        }
+
+        &__right{
+            @include flexbox;
+            &__currency{
+                width: 150px;
+                margin-right: 40px;
+                span{
+                color: $color-blur;
+                font-weight: 400;
+            }
+            }
+
+            &__phone{
+                display: flex;
+                &__number{
+                    color:  $color-blur;
+                    @include flexbox;
+                    &:hover{
+                        color: rgb(175, 231, 175);
+                    }
+                }
+            }
+
+            &__selection{
+                margin-left: 20px;
+                height: 56px;
+                &__default{
+                    position: relative;
+                    padding: 18px;
+                    padding-right: 30px;
+                    cursor: pointer;
+                    height: inherit;
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    &.clicked{
+                        background-color: #22252C;
+                    }
+                    span{
+                        font-weight: 600;
+                        columns: $color-blur;
+                    }
+
+                    .current{
+                        user-select: none;
+                    }
+
+                        
+
+                        .list{
+                            &__item{
+                                padding: 0.5rem 1rem;
+                                background-color:#22252C ;
+                                width: 76.72px;
+                                box-shadow: 0 0 0 1px #4444441c;
+                                
+
+                            }
+                            
+                           .selected{
+                            display: none;
+                            }
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            transform:scaleY(2),scaleX(0.5);
+                            transition: transform 0.3s;
+                        }
+                        .opacity{
+                            transform: scale(0);}
+
+                       
+                    
+                }
+            }
+
+            .register-btn-header{
+                margin-left: 21px;
+            }
+            
+            
+        }
+
+
+        
+        
+    }
+    }
+
+    .container{
+        height: inherit;
+        width: 1194px;
+        // padding-left: 0.75rem;
+        // padding-right: 0.75rem;
+    }
+
+    &__bottom__inner{
+        &__nav{
+            .logo{
+                margin-right: 30px;
+            }
+            display: flex;
+            justify-content: space-between;
+            &__list{
+             width: 670px;
+            @include flexbox(flex,space-around);
+            text-transform: uppercase;
+
+            &__item{
+
+                &>a{
+                    font-weight: 500;
+                    line-height: 2.5;
+                    color: white !important;
+                    transition: color 0.5s;
+                    &:hover{
+                    color: rgb(175, 231, 175)!important;
+                }
+                }
+                
+            }
+
+           
+            
+        } &__actions{
+                @include flexbox;
+                .account{
+                    vertical-align: top;
+                    color: white;
+                    transition: color 0.5s;
+
+                    &:hover{
+                        color:rgb(175, 231, 175)!important ;
+                    }
+                }
+                .carta{
+                    margin-left: 10px;
+                    position: relative;
+                    .cart-count{
+                        position: absolute;
+                        top: -15px;
+                        left: 20px;
+                        padding: 6px;
+                        border-radius: 50%;
+                        background-color: red;
+                        font-size: 12px;
+                        line-height: 0.5;
+                }
+                }
+                
+            }
+        }
+        
+    }
+
+
+}

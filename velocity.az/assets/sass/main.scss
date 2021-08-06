@@ -1,0 +1,22 @@
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "base";
+@import "animation";
+@import "common";
+@import './components/buttons';
+
+
+// fonts scss file import
+@import './font';
+
+// icons scss file import
+@import './icons';
+
+//Pages
+@import './pages/index';
+
+//bootsrap import
+@import './bootstrap/scss/bootstrap-grid.scss';
+
+
