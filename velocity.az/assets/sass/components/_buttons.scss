@@ -4,6 +4,7 @@
     border-radius: 8px;
     font-weight: 500;
     transition: all 0.5s;
+    border: none;
 
     &:hover{
         background-color: #c9ffc7cc;
@@ -17,7 +18,7 @@
     }
 
     &.isLarge{
-        padding: 16px;
+        padding: 19px 120px;
     }
 }
 

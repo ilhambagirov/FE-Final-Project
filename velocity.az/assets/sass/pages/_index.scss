@@ -341,9 +341,78 @@
                 }
             }
 
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                border: none;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                background: $color-primary;
+                margin-top: -4px;
+
+              
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
             .range-content{
             margin-bottom: 32px;
             }
+
+            .services{
+                margin-top: 30px;
+                h5{
+                    font-size: 1rem;
+                    margin-bottom: 8px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+                &__list{
+                    &__item{
+                        margin-bottom:15px !important;
+                        display: flex;
+                        align-items: center;
+                        &__servicesinpput{
+                            height: 24px;
+                            width: 24px;
+                            margin-right: 8px;
+                            border: 2px solid rgba(255,255,255,0.2);
+                            background-color: transparent;
+                            position: relative;
+                            border-radius: 0.25rem;
+                            caret-color: $color-primary;
+                        }
+
+                        label{
+                            color: rgba(255,255,255,0.5);
+                        }
+                    }
+                }
+
+               
+            }
+            .customOperate{
+                margin: 56px auto 0;
+                max-width: 350px;
+                display: flex;
+                justify-content: center;
+                font-size: 1rem;
+               }
+
+               &__totalamount{
+                   margin-top: 60px;
+                   text-align: center;
+                   &__withdollar{
+                       font-size: 64px;
+                       font-weight: 600;
+                       color: $color-white;
+                   }
+                   &__withmanat{
+                       font-size: 32px;
+                   }
+               }
 
             
         }
@@ -506,5 +575,10 @@
         .calc{
             padding: 5px !important;
         }
-        
+}
+
+@media screen and(max-width:340px) {
+  .customOperate{
+      padding: 19px 80px !important;
+  }
 }
