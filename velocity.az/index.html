@@ -14,10 +14,10 @@
 <body>
 
   <header class="header">
-    <div class="header__top">
+    <div class="header__top ">
       <div class="container">
         <div class="header__top__inner">
-          <div class="header__top__inner__left">
+          <div class="header__top__inner__left d-none d-lg-block">
             <a href="">Daşınmasına icazə yoxdur</a>
             <a href="">Tez-tez verilən suallar</a>
           </div>
@@ -52,6 +52,11 @@
       <div class="header__bottom__inner">
         <nav class="header__bottom__inner__nav">
           <div class="d-flex">
+            <div class="togglebtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="24" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </div>
             <div class="logo">
               <svg width="164" height="48" viewBox="0 0 164 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.89602 1.19995C1.29559 1.19995 0 2.51459 0 4.13856C0 5.76253 1.29559 7.07717 2.89602 7.07717C4.49646 7.07717 5.79204 5.76253 5.79204 4.13856C5.79204 2.51459 4.49646 1.19995 2.89602 1.19995ZM2.89602 6.94828C1.3718 6.94828 0.101617 5.6852 0.101617 4.11278C0.101617 2.56614 1.3464 1.27728 2.89602 1.27728C4.42025 1.27728 5.69043 2.54037 5.69043 4.11278C5.66503 5.6852 4.42025 6.94828 2.89602 6.94828Z" fill="#C9FFC7"/>
@@ -92,7 +97,7 @@
           </div>
 
           <div class="header__bottom__inner__nav__actions">
-            <div>
+            <div style="height: inherit;">
               <a href="#">
                 <i class="icon-user_two_tone">
                   <!-- <span class="path1"></span> -->
@@ -100,7 +105,7 @@
                   <span class="path3"></span>
                   <span class="path4"></span>
                 </i>
-                <span class="account">Hesabim</span>
+                <span class="account d-none d-xl-inline-block">Hesabim</span>
               </a>
 
               <a class="carta" href="#">
@@ -118,6 +123,12 @@
       </div>
     </div>
   </header>
+
+  <section class="slider">
+    <div class="container">
+
+    </div>
+  </section>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>
