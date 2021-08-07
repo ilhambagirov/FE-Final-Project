@@ -1,0 +1,39 @@
+.range-content{
+    display: flex;
+    height: 56px;
+    position: relative;
+    align-items: center;
+    background-color: #22252C !important;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #22252C;
+    justify-content: space-between;
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        input{
+            width: 55px;
+            color: $color-white;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            text-align: right;
+        }
+    }
+
+    &__selection{
+        &__list{
+            display: none;
+            text-align: right;
+        }
+    }
+    input#rangeslider{
+        display: inline-block;
+        width:100% ;
+        height: 4px;
+       position: absolute;
+       top: 45px;
+       right: -2px;
+       background-color: lawngreen;
+    }
+}

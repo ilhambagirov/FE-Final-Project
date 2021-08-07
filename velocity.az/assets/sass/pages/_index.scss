@@ -2,6 +2,9 @@
     &__top{
     height: 56px;
     background-color: $header-bg;
+    .container{
+        margin-top: 0 !important;
+    }
 
     &__inner{
         height: inherit;
@@ -216,8 +219,8 @@
 
 .main-slider{
   border: 0.5px solid rgba(170, 167, 167, 0.185);
-  border-radius: 8px;
-  background-color:#31343b ;
+  border-radius: $section-border-r;
+  background-color:$section-primary ;
 
   img{
       max-width: 100%;
@@ -245,6 +248,106 @@
 }
 .flickity-viewport{
     height: 488.641px !important;
+}
+
+
+//section Calculator
+
+.customcalcmt{
+    margin-top: 80px;
+    .calculator{
+        background-color:$section-primary ;
+        border-radius: $section-border-r;
+        .calc{
+            padding: 64px 105px 48px;
+
+            &__heading{
+                text-align: center;
+
+                h2{
+                    color: $color-primary;
+                    font-weight: 700;
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    color: rgba(255,255,255,0.5);
+                    margin-bottom: 60px;
+                }
+            }
+
+            .tabs{
+                margin-bottom: 50px;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                .customblurbtn1{
+                    @include flexbox;
+                    padding: 10px 25px ;
+                    border-radius: 8px;
+                    span{
+                        margin-left: 5px;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: $color-white;
+                    }
+                    &:focus{
+                        background-color:  $sectionitems-bg;
+                     }
+                }
+                .customblurbtn2{
+                    margin-left: 10px;
+                    @include flexbox;
+                    padding: 10px 25px ;
+                    border-radius: 8px;
+                    span{
+                        margin-left: 5px;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: $color-white;
+                        
+                    }
+                    &:focus{
+                           background-color:  $sectionitems-bg;
+                        }
+                }
+            }
+
+            .typeofpackage{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                border: 0.2px solid rgba(255,255,255,0.2);
+                border-radius: 8px;
+                margin-bottom: 50px;
+
+                button{
+                    width: 100%;
+                    padding: 15px 40px;
+                    border-radius: 8px;
+                    background-color: $section-primary;
+                    border: none;
+                    outline: none;
+                    &:focus{
+                        background-color: $sectionitems-bg;
+                    }
+                    span{
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: $color-white;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            .range-content{
+            margin-bottom: 32px;
+            }
+
+            
+        }
+    }
 }
  //Media screens
 
@@ -314,6 +417,10 @@
         display: block;
     }
 
+    .calc{
+        padding: 50px;
+    }
+
 }
 
 @media screen and(max-width:768px) {
@@ -350,6 +457,21 @@
     .flickity-viewport{
         height: 665px !important;
     }
+
+    .typeofpackage{
+        button{
+            padding: 14px 20px !important;
+        }}
+
+        .tabs{
+            span{
+                display: none;
+            }
+        }
+
+        .calc{
+            padding: 30px;
+        }
 }
 
 
@@ -370,4 +492,19 @@
     .carta{
         display: none;
     }
+    .typeofpackage{
+        button{
+            padding: 14px 5px !important;
+        }}
+
+        .calc__heading{
+            h2{
+                font-size: 24px;
+            }
+        }
+
+        .calc{
+            padding: 5px !important;
+        }
+        
 }

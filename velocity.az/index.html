@@ -176,6 +176,108 @@
       </div>
     </div>
   </section>
+
+  <div class="container customcalcmt">
+    <section class="calculator">
+
+      <div class="calc">
+        <div class="calc__heading">
+          <h2>Kalkulyator</h2>
+          <p>Bağlamanın hər hansı bir tərəfinin ölçüsü 1m və daha çox olarsa, bağlamanın həm həcm, həm də fiziki çəkisi hesablanır. Hansı çəki yüksək olarsa, daşınma haqqı ona əsasən hesablanır.</p>
+        </div>
+        <div class="calc__content">
+          
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <h5 style="font-size: 1rem;font-weight: 500;">Ölkə seçin</h5>
+             <div class="tabs">
+               <button class="blurbtn customblurbtn1">
+                 <img src="./assets/images/Turkey.svg" alt="">
+                 <span>Türkiyə</span>
+               </button>
+               <button class="blurbtn customblurbtn2">
+                 <img src="./assets/images/US.svg" alt="">
+                 <span>ABŞ</span>
+               </button>
+             </div>
+            </div>
+ 
+            <div class="col-12 col-xl-6">
+              <h5  style="font-size: 1rem;font-weight: 500;">Bağlamanın növü</h5>
+ 
+              <div class="typeofpackage">
+                <button><span>Adi məhsul</span></button>
+                <button><span>Maye və kosmetika</span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="range-content">
+                <div class="range-content__heading">
+                  <p>En</p>
+                  <input data-target="en" type="number"id="rangevalue" min="1" max="100" value="32">
+                </div>
+                <div class="range-content__selection">
+                  <span>sm</span>
+                  <ul class="range-content__selection__list">
+                    <li class="range-content__selection__list__item">m</li>
+                  </ul>
+                </div>
+                <input data-source="en" type="range" id="rangeslider" min="1" max="100" value="32">
+              </div>
+              <div class="range-content">
+                <div class="range-content__heading">
+                  <p>Hündürlük</p>
+                  <input data-target="height" type="number"id="rangevalue" min="1" max="100" value="32">
+                </div>
+                <div class="range-content__selection">
+                  <span>sm</span>
+                  <ul class="range-content__selection__list">
+                    <li class="range-content__selection__list__item">m</li>
+                  </ul>
+                </div>
+                <input data-source="height" type="range" id="rangeslider" min="1" max="100" value="32">
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="range-content">
+                <div class="range-content__heading">
+                  <p>Uzunluq</p>
+                  <input data-target="width" type="number"id="rangevalue" min="1" max="100" value="32">
+                </div>
+                <div class="range-content__selection">
+                  <span>sm</span>
+                  <ul class="range-content__selection__list">
+                    <li class="range-content__selection__list__item">m</li>
+                  </ul>
+                </div>
+                <input data-source="width" type="range" id="rangeslider" min="1" max="100" value="32">
+              </div>
+              <div class="range-content">
+                <div class="range-content__heading">
+                  <p>Bağlamanın çəkisi</p>
+                  <input data-target="kg" type="number"id="rangevalue" min="1" max="100" value="32">
+                </div>
+                <div class="range-content__selection">
+                  <span>sm</span>
+                  <ul class="range-content__selection__list">
+                    <li class="range-content__selection__list__item">m</li>
+                  </ul>
+                </div>
+                <input data-source="kg" type="range" id="rangeslider" min="1" max="100" value="32">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script>
@@ -184,7 +286,7 @@
      fullscreen:true,
      lazyload:1,
       prevNextButtons: false,
-      autoPlay: 2500
+      autoPlay: 1500
     });
   </script>
   <script src="./assets/js/main.js"></script>

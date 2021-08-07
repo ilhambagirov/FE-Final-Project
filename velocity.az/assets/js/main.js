@@ -33,4 +33,27 @@ $( function() {
       $galleryNavItems.eq( flickity.selectedIndex ).addClass('is-selected');
     });
   });
+
+  //calculator slider
+
+  let rangevalues=document.querySelectorAll('#rangevalue')
+  let rangesliders=document.querySelectorAll('#rangeslider')
+  rangesliders.forEach(rangeslider=>{
+   
+
+      rangeslider.addEventListener("input", function(e) {
+        rangevalues.forEach(rangevalue=>{
+        if (rangeslider.getAttribute('data-source')===rangevalue.getAttribute('data-target')) {
+          rangevalue.value = rangeslider.value;
+        }
+      
+      });
+    })
+   
+  })
+  
+
+
+
+
   

@@ -79,6 +79,44 @@ a {
   .btn.isLarge {
     padding: 16px; }
 
+.blurbtn {
+  background-color: #31343b;
+  border: 0.2px solid rgba(194, 192, 192, 0.472); }
+  .blurbtn:focus {
+    border: 0.5px solid #22252C; }
+
+.range-content {
+  display: flex;
+  height: 56px;
+  position: relative;
+  align-items: center;
+  background-color: #22252C !important;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #22252C;
+  justify-content: space-between; }
+  .range-content__heading {
+    display: flex;
+    justify-content: space-between; }
+    .range-content__heading input {
+      width: 55px;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      text-align: right; }
+  .range-content__selection__list {
+    display: none;
+    text-align: right; }
+  .range-content input#rangeslider {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 45px;
+    right: -2px;
+    background-color: lawngreen; }
+
 @font-face {
   font-family: 'Yolk';
   src: url("../fonts/Yolk-Bold.eot");
@@ -1095,6 +1133,8 @@ i.icon-lg {
 .header__top {
   height: 56px;
   background-color: #3B4046; }
+  .header__top .container {
+    margin-top: 0 !important; }
   .header__top__inner {
     height: inherit;
     display: flex;
@@ -1262,6 +1302,79 @@ i.icon-lg {
 .flickity-viewport {
   height: 488.641px !important; }
 
+.customcalcmt {
+  margin-top: 80px; }
+  .customcalcmt .calculator {
+    background-color: #31343b;
+    border-radius: 8px; }
+    .customcalcmt .calculator .calc {
+      padding: 64px 105px 48px; }
+      .customcalcmt .calculator .calc__heading {
+        text-align: center; }
+        .customcalcmt .calculator .calc__heading h2 {
+          color: #c9ffc7;
+          font-weight: 700;
+          font-size: 40px;
+          margin-bottom: 10px; }
+        .customcalcmt .calculator .calc__heading p {
+          color: rgba(255, 255, 255, 0.5);
+          margin-bottom: 60px; }
+      .customcalcmt .calculator .calc .tabs {
+        margin-bottom: 50px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center; }
+        .customcalcmt .calculator .calc .tabs .customblurbtn1 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 25px;
+          border-radius: 8px; }
+          .customcalcmt .calculator .calc .tabs .customblurbtn1 span {
+            margin-left: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff; }
+          .customcalcmt .calculator .calc .tabs .customblurbtn1:focus {
+            background-color: #22252C; }
+        .customcalcmt .calculator .calc .tabs .customblurbtn2 {
+          margin-left: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 25px;
+          border-radius: 8px; }
+          .customcalcmt .calculator .calc .tabs .customblurbtn2 span {
+            margin-left: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff; }
+          .customcalcmt .calculator .calc .tabs .customblurbtn2:focus {
+            background-color: #22252C; }
+      .customcalcmt .calculator .calc .typeofpackage {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        border: 0.2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin-bottom: 50px; }
+        .customcalcmt .calculator .calc .typeofpackage button {
+          width: 100%;
+          padding: 15px 40px;
+          border-radius: 8px;
+          background-color: #31343b;
+          border: none;
+          outline: none; }
+          .customcalcmt .calculator .calc .typeofpackage button:focus {
+            background-color: #22252C; }
+          .customcalcmt .calculator .calc .typeofpackage button span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff;
+            white-space: nowrap; }
+      .customcalcmt .calculator .calc .range-content {
+        margin-bottom: 32px; }
+
 @media screen and (max-width: 1200px) {
   .flickity-viewport {
     height: 441px !important; }
@@ -1302,7 +1415,9 @@ i.icon-lg {
   .flickity-viewport {
     height: 780px !important; }
   .customLarge {
-    display: block; } }
+    display: block; }
+  .calc {
+    padding: 50px; } }
 
 @media screen and (max-width: 768px) {
   .header__top {
@@ -1326,7 +1441,13 @@ i.icon-lg {
   .carta {
     right: 446px; }
   .flickity-viewport {
-    height: 665px !important; } }
+    height: 665px !important; }
+  .typeofpackage button {
+    padding: 14px 20px !important; }
+  .tabs span {
+    display: none; }
+  .calc {
+    padding: 30px; } }
 
 @media screen and (max-width: 576px) {
   .header__bottom__inner__nav {
@@ -1338,7 +1459,13 @@ i.icon-lg {
     transform: translate(-50%, -50%);
     height: auto; }
   .carta {
-    display: none; } }
+    display: none; }
+  .typeofpackage button {
+    padding: 14px 5px !important; }
+  .calc__heading h2 {
+    font-size: 24px; }
+  .calc {
+    padding: 5px !important; } }
 
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
