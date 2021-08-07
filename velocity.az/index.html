@@ -8,6 +8,7 @@
       rel="shortcut icon"
       href="./assets/icons/logo.svg"
     />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Velocity</title>
 </head>
@@ -124,11 +125,68 @@
     </div>
   </header>
 
-  <section class="slider">
+  <section class="slider mt-4">
     <div class="container">
 
+      <div class="main-slider">
+        <div class="carousel-cell">
+          <div class="carousel-cell__info">
+            <h1>Diqqət !!! Türkiyə Ünvanımız Dəyişdi</h1>
+            <p>Xidmət səviyyəsinin yüksəldilməsi məqsədiylə Velocity Türkiyə anbarı dəyişdirildi</p>
+            <a class="btn isMedium" href="">Ətraflı</a>
+          </div>
+          <div class="wrapperslide-last">
+          <img src="./assets/images/saytturki.png" alt="">
+          <a class="btn isLarge customLarge mt-1" href="">Ətraflı</a>
+        </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell__info">
+            <h1>Velocity.az ilə Rahat və təhlükəsiz çatdırılma</h1>
+            <p>Velocity.az fəaliyyətə başladı</p>
+            <a class="btn isMedium" href="">Ətraflı</a>
+          </div>
+          <div class="wrapperslide-last">
+          <img src="./assets/images/cargovelo.png" alt="">
+          <a class="btn isLarge customLarge mt-1" href="">Ətraflı</a>
+        </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell__info">
+            <h1>Türkiyədən Azərbaycana çatdırılma</h1>
+            <p>Türkiyənin bütün onlayn mağazalarından Azərbaycanın bütün bölgələrinə çatdırılma</p>
+            <a class="btn isMedium" href="">Ətraflı</a>
+          </div>
+          <div class="wrapperslide-last">
+          <img src="./assets/images/saytamerika.png" alt="">
+          <a class="btn isLarge customLarge mt-1" href="">Ətraflı</a>
+        </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell__info">
+            <h1>Amerikadan sifariş et, biz gətirək!</h1>
+            <p>Sərfəli tariflər və sürətli çatdırılma ilə artıq Amerikadan alış-veriş etmək zamanıdır.</p>
+            <a class="btn isMedium" href="">Ətraflı</a>
+          </div>
+          <div class="wrapperslide-last">
+            <img src="./assets/images/saytamerika.png" alt="">
+            <a class="btn isLarge customLarge mt-1" href="">Ətraflı</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    $('.main-slider').flickity({
+     cellAlign: 'left',
+     fullscreen:true,
+     lazyload:1,
+      prevNextButtons: false,
+      autoPlay: 2500
+    });
+  </script>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

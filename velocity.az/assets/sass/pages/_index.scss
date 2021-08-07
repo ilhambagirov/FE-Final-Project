@@ -180,16 +180,85 @@
 
  .container{
     height: inherit;
-    width: 1194px;
     // padding-left: 0.75rem;
     // padding-right: 0.75rem;
 }
 
 //section slider
 
+.carousel-cell {
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 
+    &__info{
+        padding-top: 80px;
+        padding-bottom: 140px;
+        padding-right: 30px;
+        padding-left: 52px;
+        h1{
+            font-weight: 700;
+            color: #fff;
+            font-size: 48px;
+            line-height: 150%;
+        }
 
+        p{
+            margin-top: 24px;
+            margin-bottom: 58px;
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+  }
+
+.main-slider{
+  border: 0.5px solid rgba(170, 167, 167, 0.185);
+  border-radius: 8px;
+  background-color:#31343b ;
+
+  img{
+      max-width: 100%;
+      border-radius: 8px;
+  }
+}
+
+.flickity-page-dots {
+    margin-top: 10px;
+    .dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(118, 167, 110);
+}
+}
+
+.flickity-page-dots .dot.is-selected{
+    width: 30px;
+    border-radius: 8px;
+    background-color: $btn-primary;
+}
+.customLarge{
+    display: none;
+}
+.flickity-viewport{
+    height: 488.641px !important;
+}
  //Media screens
+
+ @media screen and(max-width:1200px) {
+    .flickity-viewport{
+        height: 441px !important;
+    }
+    .carousel-cell__info{
+       
+        h1{
+            font-size: 35px;
+        }
+    }
+}
 @media screen and(max-width:992px) {
     .header__bottom__inner__nav__list{
         display: none;
@@ -215,6 +284,36 @@
         display: flex;
         align-items: center;
     }
+
+    .carousel-cell{
+        flex-direction: column;
+        .wrapperslide-last{
+           padding-right: 30px;
+           padding-left: 52px;
+        }
+
+        &__info{
+            padding-bottom: 0;
+            padding-top: 10px;
+            a{
+                display: none;
+            }
+            p{
+                margin: 0;
+                margin-top: 10px;
+            }
+            h1{
+                font-size: 35px;
+            }
+        }
+    }
+    .flickity-viewport{
+        height: 780px !important;
+    }
+    .customLarge{
+        display: block;
+    }
+
 }
 
 @media screen and(max-width:768px) {
@@ -247,6 +346,9 @@
     }
     .carta{
         right: 446px;
+    }
+    .flickity-viewport{
+        height: 665px !important;
     }
 }
 

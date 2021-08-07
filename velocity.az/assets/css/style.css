@@ -74,6 +74,10 @@ a {
     background-color: #c9ffc7cc; }
   .btn.issmall {
     padding: 11px 32px; }
+  .btn.isMedium {
+    padding: 16px 72px; }
+  .btn.isLarge {
+    padding: 16px; }
 
 @font-face {
   font-family: 'Yolk';
@@ -1207,8 +1211,62 @@ i.icon-lg {
   height: 52px; }
 
 .container {
-  height: inherit;
-  width: 1194px; }
+  height: inherit; }
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; }
+  .carousel-cell__info {
+    padding-top: 80px;
+    padding-bottom: 140px;
+    padding-right: 30px;
+    padding-left: 52px; }
+    .carousel-cell__info h1 {
+      font-weight: 700;
+      color: #fff;
+      font-size: 48px;
+      line-height: 150%; }
+    .carousel-cell__info p {
+      margin-top: 24px;
+      margin-bottom: 58px;
+      line-height: 28px;
+      color: #fff; }
+
+.main-slider {
+  border: 0.5px solid rgba(170, 167, 167, 0.185);
+  border-radius: 8px;
+  background-color: #31343b; }
+  .main-slider img {
+    max-width: 100%;
+    border-radius: 8px; }
+
+.flickity-page-dots {
+  margin-top: 10px; }
+  .flickity-page-dots .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #76a76e; }
+
+.flickity-page-dots .dot.is-selected {
+  width: 30px;
+  border-radius: 8px;
+  background-color: #C9FFC7; }
+
+.customLarge {
+  display: none; }
+
+.flickity-viewport {
+  height: 488.641px !important; }
+
+@media screen and (max-width: 1200px) {
+  .flickity-viewport {
+    height: 441px !important; }
+  .carousel-cell__info h1 {
+    font-size: 35px; } }
 
 @media screen and (max-width: 992px) {
   .header__bottom__inner__nav__list {
@@ -1225,7 +1283,26 @@ i.icon-lg {
     margin-left: 68px; }
   .togglebtn {
     display: flex;
-    align-items: center; } }
+    align-items: center; }
+  .carousel-cell {
+    flex-direction: column; }
+    .carousel-cell .wrapperslide-last {
+      padding-right: 30px;
+      padding-left: 52px; }
+    .carousel-cell__info {
+      padding-bottom: 0;
+      padding-top: 10px; }
+      .carousel-cell__info a {
+        display: none; }
+      .carousel-cell__info p {
+        margin: 0;
+        margin-top: 10px; }
+      .carousel-cell__info h1 {
+        font-size: 35px; }
+  .flickity-viewport {
+    height: 780px !important; }
+  .customLarge {
+    display: block; } }
 
 @media screen and (max-width: 768px) {
   .header__top {
@@ -1247,7 +1324,9 @@ i.icon-lg {
   .header__bottom__inner__nav {
     margin-top: -1rem; }
   .carta {
-    right: 446px; } }
+    right: 446px; }
+  .flickity-viewport {
+    height: 665px !important; } }
 
 @media screen and (max-width: 576px) {
   .header__bottom__inner__nav {

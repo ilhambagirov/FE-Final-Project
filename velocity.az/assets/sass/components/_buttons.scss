@@ -12,11 +12,11 @@
         padding:11px 32px;
     }
 
-    // .isMedium{
+    &.isMedium{
+        padding: 16px 72px;
+    }
 
-    // }
-
-    // .isLarge{
-
-    // }
+    &.isLarge{
+        padding: 16px;
+    }
 }
