@@ -277,43 +277,6 @@
                 }
             }
 
-            .tabs{
-                margin-bottom: 50px;
-                margin-top: 10px;
-                display: flex;
-                align-items: center;
-                .customblurbtn1{
-                    @include flexbox;
-                    padding: 10px 25px ;
-                    border-radius: 8px;
-                    span{
-                        margin-left: 5px;
-                        font-size: 1rem;
-                        font-weight: 500;
-                        color: $color-white;
-                    }
-                    &:focus{
-                        background-color:  $sectionitems-bg;
-                     }
-                }
-                .customblurbtn2{
-                    margin-left: 10px;
-                    @include flexbox;
-                    padding: 10px 25px ;
-                    border-radius: 8px;
-                    span{
-                        margin-left: 5px;
-                        font-size: 1rem;
-                        font-weight: 500;
-                        color: $color-white;
-                        
-                    }
-                    &:focus{
-                           background-color:  $sectionitems-bg;
-                        }
-                }
-            }
-
             .typeofpackage{
                 margin-top: 10px;
                 display: flex;
@@ -506,6 +469,83 @@
     }
 }
 
+//section Tariffs
+
+.container{
+
+  .tariffs{
+    background-color: $section-primary;
+    border-radius: $section-border-r;
+    padding: 48px 48px 88px;
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 72px;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            color: $color-primary;
+        }
+        .customtabs{
+            display: flex;
+            justify-content: flex-start;
+            margin: 0;
+        }
+    }
+
+    &__tab1-content{
+        &__tariff{
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 8px;
+            padding: 21px 55px 21px 31px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:hover{
+                border-color: $color-primary;
+            }
+            &__heading{
+                display: flex;
+                align-items: center;
+                h4{
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    color: $color-white;
+                    margin-left: 32px;
+                    margin-right: 14px;
+                }
+            }
+            &__body{
+                display: flex;
+                justify-content: space-between;
+                .tariff-price{
+                    .product-type{
+                        color: $color-primary;
+                        margin-bottom: 5px;
+                    }
+                    .pricetariff{
+                        font-weight: 700;
+                        color: $color-white;
+                    }
+                }
+                .tariff-category{
+                    margin-left: 30px;
+                    .product-type{
+                        color: $color-primary;
+                        margin-bottom: 5px;
+                    }
+                    .pricetariff{
+                        font-weight: 700;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
 
 
  //Media screens
@@ -635,6 +675,15 @@
         .__content{
             gap: 16px;
         }
+        .tariffs__tab1-content__tariff{
+            flex-direction: column;
+
+            &__body{
+                width: 100%;
+                margin-top: 10px;
+                justify-content: space-between;
+            }
+        }
 }
 
 
@@ -673,6 +722,20 @@
         .strech-col{
             width: 320px !important;
         }
+
+        .tariffs__heading{
+            flex-direction: column;
+
+            .customtabs{
+                margin-top: 20px !important;
+            }
+        }
+
+        h2,h4{
+            font-size: 24px !important;
+        }
+
+        
 }
 
 @media screen and(max-width:340px) {

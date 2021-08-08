@@ -1,0 +1,36 @@
+.tabs{
+    margin-bottom: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    .customblurbtn1{
+        @include flexbox;
+        padding: 10px 25px ;
+        border-radius: 8px;
+        span{
+            margin-left: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-white;
+        }
+        &:focus{
+            background-color:  $sectionitems-bg;
+         }
+    }
+    .customblurbtn2{
+        margin-left: 10px;
+        @include flexbox;
+        padding: 10px 25px ;
+        border-radius: 8px;
+        span{
+            margin-left: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color-white;
+            
+        }
+        &:focus{
+               background-color:  $sectionitems-bg;
+            }
+    }
+}
