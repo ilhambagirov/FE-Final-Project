@@ -1,7 +1,90 @@
+body{
+    position: relative;
+}
+.dropdownmenu{
+    width:70%;
+    max-width: 100%;
+    height: 100%;
+    background-color: $black-dark-mode;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    padding: 16px 16px 22px;
+    transition: left 1s ease;
+
+    &__logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .dropdownmenu__content{
+        &__list{
+            &__item{
+                padding: 16px 32px;
+                background-color: #3B4046;
+                border-radius: 8px;
+                margin-bottom: 10px;
+               a{
+                font-size: 18px !important;
+                font-weight: 600;
+                color: $color-white;
+               }
+            }
+        }
+    }
+    .dropdownmenu__bottom{
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .langs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            a{
+                margin-bottom: 10px;
+            }
+        }
+
+        .custom-menu-langs{
+            padding: 16px;
+            background-color: $black-dark-mode;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 500;
+            color: $color-white;
+            margin-right: 10px;
+        }
+
+        .customtelmenu{
+            display: flex;
+            align-items: center;
+            padding: 16px 32px;
+            background-color: $black-dark-mode;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 500;
+            color: $color-white;
+            margin-right: 10px;
+            span{
+                color: rgba(255,255,255,0.5);
+            }
+        }
+    }
+}
+.dropdownmenu-toggle{
+    left: 0;
+    transition: left 1s ease;
+}
 .header{
     &__top{
     height: 56px;
     background-color: $header-bg;
+
+  
     .container{
         margin-top: 0 !important;
     }
@@ -1055,6 +1138,9 @@
 
     .footer__heading__title{
         font-size: 24px !important;
+    }
+    .dropdownmenu{
+        width: 100%;
     }
 }
 @media screen and(max-width:430px) {

@@ -32,11 +32,10 @@ $( function() {
       $galleryNav.find('.is-selected').removeClass('is-selected');
       $galleryNavItems.eq( flickity.selectedIndex ).addClass('is-selected');
     });
-  });
-
+});
   //calculator slider
- 
 
+  
 (function range(){
   
   let rangevalues=document.querySelectorAll('#rangevalue')
@@ -89,7 +88,18 @@ manat.innerText=total*1.7
 
 }
 
+//dropdown menu
 
+let menubtn=document.querySelector('.togglebtn')
+let menu=document.querySelector('.dropdownmenu')
+let closebtn=document.querySelector('.close')
+menubtn.addEventListener('click',e=>{
+  menu.classList.add('dropdownmenu-toggle')
+})
+
+closebtn.addEventListener('click',e=>{
+  menu.classList.remove('dropdownmenu-toggle')
+})
 
 
 
