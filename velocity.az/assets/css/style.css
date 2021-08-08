@@ -1406,6 +1406,7 @@ i.icon-lg {
           text-transform: capitalize;
           font-weight: 500; }
         .customcalcmt .calculator .calc .services__list__item {
+          position: relative;
           margin-bottom: 15px !important;
           display: flex;
           align-items: center; }
@@ -1418,8 +1419,19 @@ i.icon-lg {
             position: relative;
             border-radius: 0.25rem;
             caret-color: #c9ffc7; }
+          .customcalcmt .calculator .calc .services__list__item .checkboxback {
+            background-color: #c9ffc7; }
           .customcalcmt .calculator .calc .services__list__item label {
             color: rgba(255, 255, 255, 0.5); }
+          .customcalcmt .calculator .calc .services__list__item .tickcustom {
+            position: absolute;
+            left: 10px;
+            top: 4px;
+            display: none; }
+            .customcalcmt .calculator .calc .services__list__item .tickcustom svg {
+              fill: black; }
+            .customcalcmt .calculator .calc .services__list__item .tickcustom.tickactive {
+              display: inline; }
       .customcalcmt .calculator .calc .customOperate {
         margin: 56px auto 0;
         max-width: 350px;

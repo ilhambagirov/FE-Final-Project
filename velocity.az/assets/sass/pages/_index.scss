@@ -255,6 +255,7 @@
 
 .customcalcmt{
     margin-top: 80px;
+   
     .calculator{
         background-color:$section-primary ;
         border-radius: $section-border-r;
@@ -334,6 +335,7 @@
                 }
                 &__list{
                     &__item{
+                        position: relative;
                         margin-bottom:15px !important;
                         display: flex;
                         align-items: center;
@@ -347,9 +349,25 @@
                             border-radius: 0.25rem;
                             caret-color: $color-primary;
                         }
+                        .checkboxback{
+                            background-color: $color-primary;
+                        }
 
                         label{
                             color: rgba(255,255,255,0.5);
+                        }
+
+                        .tickcustom{
+                            position: absolute;
+                            left: 10px;
+                            top: 4px;
+                            display: none;
+                            svg{
+                                fill: black;
+                            }
+                            &.tickactive{
+                                display: inline;
+                            }
                         }
                     }
                 }

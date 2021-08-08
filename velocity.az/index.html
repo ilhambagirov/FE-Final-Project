@@ -275,16 +275,29 @@
             <h5>Əlavə xidmətlər</h5>
             <div class="services__list">
               <div class="services__list__item">
-                <input id="service-1" type="checkbox" class="services__list__item__servicesinpput">
+                <input data-target="1" id="service-1" type="checkbox" class="services__list__item__servicesinpput">
                 <label for="service-1">Baglamanın yoxlanması (2 USD)</label>
+               <span data-source="1" class="tickcustom">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                </svg>
+               </span>
               </div>
               <div class="services__list__item">
-                <input id="service-2" type="checkbox" class="services__list__item__servicesinpput">
-                <label for="service-2">İadə Xidməti (4 USD)</label>
+                <input data-target="2" id="service-2" type="checkbox" class="services__list__item__servicesinpput">
+                <label class="for-check-label" for="service-2">İadə Xidməti (4 USD)</label>
+                <span data-source="2" class="tickcustom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                    <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                  </svg>
               </div>
               <div class="services__list__item">
-                <input id="service-3" type="checkbox" class="services__list__item__servicesinpput">
+                <input data-target="3" id="service-3" type="checkbox" class="services__list__item__servicesinpput">
                 <label for="service-3">Baglamanın yoxlanması - Sifaris et xidməti vasitəsi ilə   (1 USD)</label>
+                <span data-source="3" class="tickcustom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                    <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                  </svg>
               </div>
             </div>
           </div>
@@ -298,7 +311,7 @@
             </div>
             <div class="calc__totalamount__withmanat">
               ₼
-              <span>0.00</span>
+              <span class="manat">0.00</span>
             </div>
           </div>
         </div>
