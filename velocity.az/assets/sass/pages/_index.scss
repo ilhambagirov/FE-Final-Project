@@ -573,12 +573,10 @@
         }
     }
     .shops-slider{
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         overflow-x: auto;
-        touch-action: pan-y;
-        gap: 10px;
+        gap: 25px;
+        padding: 15px;
         &__item{
             border-radius: 8px;
             width: 200px !important;
@@ -589,6 +587,9 @@
                 height: inherit;
             }
         }
+    }
+    .customblurbtn2{
+        display: none;
     }
 }
 
@@ -660,6 +661,7 @@
     }
     .customLarge{
         display: block;
+        text-align: center;
     }
 
     .calc{
@@ -733,6 +735,24 @@
         .shops-heading{
             .customblurbtn{
                 display: none;
+            }
+        }
+
+        .shops{
+            .customblurbtn2{
+                margin-top: 10px;
+                display: block;
+                background-color: $black-dark-mode;
+                border: 0.2px solid rgba(194, 192, 192, 0.472);
+                padding: 16px;
+                text-align: center;
+                border-radius: 8px;
+                color: #C9FFC7;
+                &:hover{
+                    border-color: #C9FFC7;
+                    background-color: rgba(255,255,255,0.2);
+                   
+                }
             }
         }
 }
