@@ -1552,39 +1552,49 @@ i.icon-lg {
           font-weight: 700;
           color: #fff; }
 
-.shops .shops-heading {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .shops .shops-heading h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #c9ffc7; }
-  .shops .shops-heading .customblurbtn {
-    padding: 16px 50px;
-    color: #c9ffc7;
-    border-radius: 8px;
-    background-color: #22252C; }
-    .shops .shops-heading .customblurbtn:hover {
-      background-color: rgba(255, 255, 255, 0.2); }
+.shops {
+  margin-bottom: 90px; }
+  .shops ::-webkit-scrollbar {
+    display: none; }
+  .shops .shops-heading {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .shops .shops-heading h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #c9ffc7; }
+    .shops .shops-heading .customblurbtn {
+      padding: 16px 50px;
+      color: #c9ffc7;
+      border-radius: 8px;
+      background-color: #22252C; }
+      .shops .shops-heading .customblurbtn:hover {
+        background-color: rgba(255, 255, 255, 0.2); }
+  .shops .shops-slider {
+    overflow-x: auto;
+    gap: 25px;
+    padding: 15px; }
+    .shops .shops-slider__item {
+      border-radius: 8px;
+      width: 200px !important;
+      height: 200px !important;
+      overflow: hidden; }
+      .shops .shops-slider__item img {
+        width: inherit;
+        height: inherit;
+        background-color: #fff;
+        padding: 2px; }
+    .shops .shops-slider .flickity-viewport {
+      height: 200px !important; }
+  .shops .customblurbtn2 {
+    display: none; }
 
-.shops .shops-slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 25px;
-  padding: 15px; }
-  .shops .shops-slider__item {
-    border-radius: 8px;
-    width: 200px !important;
-    height: 200px !important;
-    overflow: hidden; }
-    .shops .shops-slider__item img {
-      width: inherit;
-      height: inherit; }
-
-.shops .customblurbtn2 {
-  display: none; }
+.news {
+  border: 1px solid black;
+  height: 500px;
+  background-color: #31343b; }
 
 @media screen and (max-width: 1200px) {
   .flickity-viewport {

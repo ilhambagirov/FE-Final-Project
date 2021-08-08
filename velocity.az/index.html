@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="shortcut icon"
-      href="./assets/icons/logo.svg"
+      href="./assets/icons/favicon.svg"
     />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -568,35 +568,35 @@
       </div>
     </div>
     <div class="shops-slider">
-      <div class="shops-slider__item col-1">
+      <div class="carousel-cell shops-slider__item">
         <img src="./assets/images/store-1.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-2.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-3.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-4.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-5.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-6.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-7.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-8.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-9.png" alt="">
       </div>
-      <div class="shops-slider__item col-1">
-        <img src="./assets/images/store-1.png" alt="">
+      <div class="carousel-cell shops-slider__item">
+        <img src="./assets/images/store-10.png" alt="">
       </div>
     </div>
     <div class="container">
@@ -605,6 +605,12 @@
       </div>
     </div>
   </section>
+
+  <div class="container">
+    <section class="news">
+      
+    </section>
+  </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -616,6 +622,13 @@
      lazyload:1,
       prevNextButtons: false,
       autoPlay: 1500
+    });
+    $('.shops-slider').flickity({
+     cellAlign: 'left',
+     fullscreen:true,
+     lazyload:1,
+     pageDots:false,
+     prevNextButtons:false
     });
   </script>
   <script src="./assets/js/main.js"></script>

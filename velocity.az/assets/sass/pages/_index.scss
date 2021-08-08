@@ -551,6 +551,10 @@
 //section shops
 
 .shops{
+    margin-bottom:90px;
+    ::-webkit-scrollbar {
+        display: none;
+    }
     .shops-heading{
         margin-bottom: 50px;
         display: flex;
@@ -573,7 +577,6 @@
         }
     }
     .shops-slider{
-        display: flex;
         overflow-x: auto;
         gap: 25px;
         padding: 15px;
@@ -585,7 +588,12 @@
             img{
                 width: inherit;
                 height: inherit;
+                background-color: $color-white;
+                padding: 2px;
             }
+        }
+        .flickity-viewport{
+            height: 200px !important;
         }
     }
     .customblurbtn2{
@@ -593,7 +601,13 @@
     }
 }
 
+// section news
 
+.news{
+    border: 1px solid black;
+    height: 500px;
+    background-color: $section-primary;
+}
 
  //Media screens
 
