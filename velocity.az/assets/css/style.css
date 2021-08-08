@@ -1592,6 +1592,7 @@ i.icon-lg {
     display: none; }
 
 .news {
+  margin-bottom: 90px;
   display: flex;
   border-radius: 8px;
   background-color: #31343b;
@@ -1642,6 +1643,54 @@ i.icon-lg {
       height: 1px;
       width: calc(100% - 32px - 200px);
       background-color: rgba(255, 255, 255, 0.2); }
+
+.footer {
+  background-color: #181C1F;
+  padding-top: 56px;
+  padding-bottom: 64px; }
+  .footer .container {
+    height: inherit; }
+    .footer .container .row {
+      border-bottom: 0.2px solid rgba(194, 192, 192, 0.472); }
+  .footer__heading__title {
+    font-size: 40px !important;
+    font-weight: 700;
+    color: #c9ffc7;
+    margin-bottom: 40px; }
+  .footer__contact__list__item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center; }
+    .footer__contact__list__item i {
+      margin-right: 20px; }
+      .footer__contact__list__item i svg {
+        fill: #c9ffc7; }
+    .footer__contact__list__item a:hover {
+      color: #c9ffc7; }
+  .footer .footer-nav__list {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    line-height: 50px;
+    font-weight: 500; }
+    .footer .footer-nav__list__item a:hover {
+      color: #c9ffc7; }
+  .footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer .social-mediastop {
+    display: none;
+    align-items: center;
+    margin-bottom: 20px; }
+    .footer .social-mediastop i:not(:last-child) {
+      margin-right: 20px !important; }
+  .footer .social-medias {
+    display: flex;
+    align-items: center; }
+    .footer .social-medias svg:hover {
+      fill: #c9ffc7; }
+    .footer .social-medias i:not(:last-child) {
+      margin-right: 20px !important; }
 
 @media screen and (max-width: 1200px) {
   .flickity-viewport {
@@ -1755,7 +1804,13 @@ i.icon-lg {
     color: #C9FFC7; }
     .shops .customblurbtn2:hover {
       border-color: #C9FFC7;
-      background-color: rgba(255, 255, 255, 0.2); } }
+      background-color: rgba(255, 255, 255, 0.2); }
+  .footer {
+    flex-direction: column; }
+    .footer .social-mediastop {
+      display: flex; }
+    .footer .social-medias {
+      display: none; } }
 
 @media screen and (max-width: 576px) {
   .header__bottom__inner__nav {
@@ -1796,7 +1851,9 @@ i.icon-lg {
     .news .card {
       scroll-snap-align: center; }
     .news h2 {
-      font-size: 24px !important; } }
+      font-size: 24px !important; }
+  .footer__heading__title {
+    font-size: 24px !important; } }
 
 @media screen and (max-width: 430px) {
   .flickity-viewport {

@@ -604,6 +604,7 @@
 // section news
 
 .news{
+    margin-bottom: 90px;
     display: flex;
     border-radius: 8px;
     background-color: $section-primary;
@@ -676,6 +677,91 @@
     }
 }
 
+//footer
+
+.footer{
+    background-color: #181C1F;
+    padding-top: 56px;
+    padding-bottom: 64px;
+    .container{
+        height: inherit;
+
+        .row{
+            border-bottom: 0.2px solid rgba(194, 192, 192, 0.472);;
+        }
+    }
+
+    &__heading{
+        &__title{
+            
+            font-size: 40px !important;
+            font-weight: 700;
+            color: $color-primary;
+            margin-bottom: 40px;
+            
+        }
+    }
+
+    &__contact{
+        &__list{
+            &__item{
+                margin-bottom: 25px;
+                display: flex;
+                align-items: center;
+                i{
+                    margin-right: 20px;
+                    svg{
+                        fill: $color-primary;
+                    }
+                }
+                a:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+
+    }
+    .footer-nav{
+        &__list{
+            margin-top: 24px;
+            margin-bottom: 32px;
+            line-height: 50px;
+            font-weight: 500;
+            &__item a:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    .footer-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .social-mediastop{
+        display: none;
+        align-items: center;
+        i:not(:last-child){
+            margin-right: 20px !important;
+        }
+        margin-bottom: 20px;
+    }
+
+    .social-medias{
+        display: flex;
+        align-items: center;
+        svg{
+            
+            &:hover{
+            fill: $color-primary;
+        }
+        }
+
+        i:not(:last-child){
+            margin-right: 20px !important;
+        }
+        
+    }
+}
  //Media screens
 
  @media screen and(max-width:1200px) {
@@ -817,22 +903,20 @@
     .typeofpackage{
         button{
             padding: 14px 20px !important;
-        }}
+    }  }
 
-        .tabs{
+    .tabs{
             span{
                 display: none;
             }
-        }
-
-        .calc{
+    }
+    .calc{
             padding: 30px;
-        }
-
-        .__content{
+    }
+    .__content{
             gap: 16px;
-        }
-        .tariffs__tab1-content__tariff{
+    }
+    .tariffs__tab1-content__tariff{
             flex-direction: column;
 
             &__body{
@@ -840,14 +924,13 @@
                 margin-top: 10px;
                 justify-content: space-between;
             }
-        }
-        .shops-heading{
+    }
+    .shops-heading{
             .customblurbtn{
                 display: none;
             }
-        }
-
-        .shops{
+    }
+    .shops{
             .customblurbtn2{
                 margin-top: 10px;
                 display: block;
@@ -863,7 +946,18 @@
                    
                 }
             }
-        }
+    }
+    .footer{
+            flex-direction: column;
+    .social-mediastop{
+        display: flex;
+    }
+    .social-medias{
+        display: none;
+    }
+    }
+
+    
 }
 
 
@@ -941,7 +1035,9 @@
             }
         }
 
-        
+    .footer__heading__title{
+        font-size: 24px !important;
+    }
 }
 @media screen and(max-width:430px) {
     .flickity-viewport{
