@@ -1496,6 +1496,9 @@ i.icon-lg {
         color: #c9ffc7;
         border-radius: 8px; }
 
+.customtariffcont {
+  margin-bottom: 80px; }
+
 .container .tariffs {
   background-color: #31343b;
   border-radius: 8px;
@@ -1548,6 +1551,39 @@ i.icon-lg {
         .container .tariffs__tab1-content__tariff__body .tariff-category .pricetariff {
           font-weight: 700;
           color: #fff; }
+
+.shops .shops-heading {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .shops .shops-heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #c9ffc7; }
+  .shops .shops-heading .customblurbtn {
+    padding: 16px 50px;
+    color: #c9ffc7;
+    border-radius: 8px;
+    background-color: #22252C; }
+    .shops .shops-heading .customblurbtn:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+
+.shops .shops-slider {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  overflow-x: auto;
+  touch-action: pan-y;
+  gap: 10px; }
+  .shops .shops-slider__item {
+    border-radius: 8px;
+    width: 200px !important;
+    height: 200px !important;
+    overflow: hidden; }
+    .shops .shops-slider__item img {
+      width: inherit;
+      height: inherit; }
 
 @media screen and (max-width: 1200px) {
   .flickity-viewport {
@@ -1629,7 +1665,9 @@ i.icon-lg {
     .tariffs__tab1-content__tariff__body {
       width: 100%;
       margin-top: 10px;
-      justify-content: space-between; } }
+      justify-content: space-between; }
+  .shops-heading .customblurbtn {
+    display: none; } }
 
 @media screen and (max-width: 576px) {
   .header__bottom__inner__nav {
@@ -1655,7 +1693,21 @@ i.icon-lg {
     .tariffs__heading .customtabs {
       margin-top: 20px !important; }
   h2, h4 {
-    font-size: 24px !important; } }
+    font-size: 24px !important; }
+  .carousel-cell__info p {
+    display: none; }
+  .carousel-cell__info h1 {
+    font-size: 28px !important; }
+  .flickity-viewport {
+    height: 600px !important; } }
+
+@media screen and (max-width: 430px) {
+  .flickity-viewport {
+    height: 500px !important; } }
+
+@media screen and (max-width: 360px) {
+  .carousel-cell__info h1 {
+    font-size: 25px !important; } }
 
 @media screen and (max-width: 340px) {
   .customOperate {

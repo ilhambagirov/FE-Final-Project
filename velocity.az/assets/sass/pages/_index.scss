@@ -470,7 +470,9 @@
 }
 
 //section Tariffs
-
+.customtariffcont{
+    margin-bottom: 80px;
+}
 .container{
 
   .tariffs{
@@ -544,6 +546,50 @@
         }
     }
 }
+}
+
+//section shops
+
+.shops{
+    .shops-heading{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            color: $color-primary;
+        }
+        .customblurbtn{
+            padding: 16px 50px;
+            color:$color-primary;
+            border-radius: 8px;
+            background-color: $black-dark-mode;
+            &:hover{
+                background-color:  rgba(255,255,255,0.2);;
+               }
+
+        }
+    }
+    .shops-slider{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        overflow-x: auto;
+        touch-action: pan-y;
+        gap: 10px;
+        &__item{
+            border-radius: 8px;
+            width: 200px !important;
+            height: 200px !important;
+            overflow: hidden;
+            img{
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
 }
 
 
@@ -684,6 +730,11 @@
                 justify-content: space-between;
             }
         }
+        .shops-heading{
+            .customblurbtn{
+                display: none;
+            }
+        }
 }
 
 
@@ -735,11 +786,37 @@
             font-size: 24px !important;
         }
 
+        .carousel-cell__info{
+            p{
+                display: none;
+            }
+            h1{
+                font-size: 28px !important;
+            }
+        }
+
+        .flickity-viewport{
+            height: 600px !important;
+        }
+
         
 }
+@media screen and(max-width:430px) {
+    .flickity-viewport{
+        height: 500px !important;
+    }
 
+}
+@media screen and(max-width:360px) {
+    .carousel-cell__info{
+        h1{
+            font-size: 25px !important;
+        }
+    }
+  }
 @media screen and(max-width:340px) {
   .customOperate{
       padding: 19px 80px !important;
   }
 }
+
