@@ -1803,8 +1803,11 @@ body {
 @media screen and (max-width: 992px) {
   .carousel-cell {
     align-items: center; }
+  .header__top__inner {
+    margin: 0 !important; }
   .header__top__inner__right {
-    margin-left: 130px; }
+    margin-left: auto;
+    margin-right: auto; }
   .header__bottom__inner__nav__list {
     display: none; }
   .header__bottom__inner__nav {
@@ -2130,6 +2133,167 @@ body {
   max-width: 960px;
   margin: auto; }
 
+.strech-colcust {
+  margin-bottom: 25px; }
+
+.tariff-container {
+  padding: 10px; }
+  .tariff-container .tariffs {
+    background-color: #31343b;
+    border-radius: 8px;
+    padding: 48px 48px 88px; }
+    .tariff-container .tariffs__heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 72px; }
+      .tariff-container .tariffs__heading h2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #c9ffc7; }
+      .tariff-container .tariffs__heading .customtabs {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0; }
+    .tariff-container .tariffs__tab1-content__tariff {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 8px;
+      padding: 21px 55px 21px 31px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .tariff-container .tariffs__tab1-content__tariff:hover {
+        border-color: #c9ffc7; }
+      .tariff-container .tariffs__tab1-content__tariff__heading {
+        display: flex;
+        align-items: center; }
+        .tariff-container .tariffs__tab1-content__tariff__heading h4 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #fff;
+          margin-left: 32px;
+          margin-right: 14px; }
+      .tariff-container .tariffs__tab1-content__tariff__body {
+        display: flex;
+        justify-content: space-between; }
+        .tariff-container .tariffs__tab1-content__tariff__body .tariff-price .product-type {
+          color: #c9ffc7;
+          margin-bottom: 5px; }
+        .tariff-container .tariffs__tab1-content__tariff__body .tariff-price .pricetariff {
+          font-weight: 700;
+          color: #fff; }
+        .tariff-container .tariffs__tab1-content__tariff__body .tariff-category {
+          margin-left: 30px; }
+          .tariff-container .tariffs__tab1-content__tariff__body .tariff-category .product-type {
+            color: #c9ffc7;
+            margin-bottom: 5px; }
+          .tariff-container .tariffs__tab1-content__tariff__body .tariff-category .pricetariff {
+            font-weight: 700;
+            color: #fff; }
+
+.tariff-container {
+  padding: 10px;
+  margin-top: 80px; }
+  .tariff-container .calculator {
+    background-color: #31343b;
+    border-radius: 8px; }
+    .tariff-container .calculator .calc {
+      padding: 64px 105px 48px; }
+      .tariff-container .calculator .calc__heading {
+        text-align: center; }
+        .tariff-container .calculator .calc__heading h2 {
+          color: #c9ffc7;
+          font-weight: 700;
+          font-size: 40px;
+          margin-bottom: 10px; }
+        .tariff-container .calculator .calc__heading p {
+          color: rgba(255, 255, 255, 0.5);
+          margin-bottom: 60px; }
+      .tariff-container .calculator .calc .typeofpackage {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        border: 0.2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin-bottom: 50px; }
+        .tariff-container .calculator .calc .typeofpackage button {
+          width: 100%;
+          padding: 15px 40px;
+          border-radius: 8px;
+          background-color: #31343b;
+          border: none;
+          outline: none; }
+          .tariff-container .calculator .calc .typeofpackage button:focus {
+            background-color: #22252C; }
+          .tariff-container .calculator .calc .typeofpackage button span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff;
+            white-space: nowrap; }
+      .tariff-container .calculator .calc input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: #c9ffc7;
+        margin-top: -4px; }
+      .tariff-container .calculator .calc input::-webkit-outer-spin-button,
+      .tariff-container .calculator .calc input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+      .tariff-container .calculator .calc .range-content {
+        margin-bottom: 32px; }
+      .tariff-container .calculator .calc .services {
+        margin-top: 30px; }
+        .tariff-container .calculator .calc .services h5 {
+          font-size: 1rem;
+          margin-bottom: 8px;
+          text-transform: capitalize;
+          font-weight: 500; }
+        .tariff-container .calculator .calc .services__list__item {
+          position: relative;
+          margin-bottom: 15px !important;
+          display: flex;
+          align-items: center; }
+          .tariff-container .calculator .calc .services__list__item__servicesinpput {
+            height: 24px;
+            width: 24px;
+            margin-right: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background-color: transparent;
+            position: relative;
+            border-radius: 0.25rem;
+            caret-color: #c9ffc7; }
+          .tariff-container .calculator .calc .services__list__item .checkboxback {
+            background-color: #c9ffc7; }
+          .tariff-container .calculator .calc .services__list__item label {
+            color: rgba(255, 255, 255, 0.5); }
+          .tariff-container .calculator .calc .services__list__item .tickcustom {
+            position: absolute;
+            left: 10px;
+            top: 4px;
+            display: none; }
+            .tariff-container .calculator .calc .services__list__item .tickcustom svg {
+              fill: black; }
+            .tariff-container .calculator .calc .services__list__item .tickcustom.tickactive {
+              display: inline; }
+      .tariff-container .calculator .calc .customOperate {
+        margin: 56px auto 0;
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        font-size: 1rem; }
+      .tariff-container .calculator .calc__totalamount {
+        margin-top: 60px;
+        text-align: center; }
+        .tariff-container .calculator .calc__totalamount__withdollar {
+          font-size: 64px;
+          font-weight: 600;
+          color: #fff; }
+        .tariff-container .calculator .calc__totalamount__withmanat {
+          font-size: 32px; }
+
 @media screen and (max-width: 576px) {
   .pageheading h2 {
     font-size: 24px !important; } }
@@ -2146,8 +2310,8 @@ body {
       padding-left: 16px;
       padding-right: 16px; }
       .services .services-content .strech-colcust .news-box {
+        height: 353px;
         padding: 31px;
-        height: 300px;
         border: 1px solid white;
         border-radius: 8px; }
         .services .services-content .strech-colcust .news-box .card-heading div {
@@ -2159,10 +2323,43 @@ body {
             width: inherit;
             height: inherit;
             padding: 10px; }
+        .services .services-content .strech-colcust .news-box .service-card-title {
+          margin-top: 25px; }
+          .services .services-content .strech-colcust .news-box .service-card-title a {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 40px;
+            color: #fff; }
+          .services .services-content .strech-colcust .news-box .service-card-title p {
+            margin-top: 15px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            line-height: 32px;
+            -webkit-box-orient: vertical;
+            display: block;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+
+.customrow {
+  margin-right: -12px;
+  margin-left: -12px; }
 
 @media screen and (max-width: 576px) {
-  .services .pageheading h2 {
-    font-size: 24px !important; } }
+  .sevicecustomcont {
+    padding: 0 !important; }
+  .news-box {
+    padding: 24px 16px 32px !important; }
+  .services {
+    padding: 32px 16px 40px !important; }
+    .services .pageheading h2 {
+      font-size: 24px !important; }
+  .service-card-title a {
+    font-size: 20px !important;
+    line-height: 32px; }
+  .service-card-title p {
+    font-size: 14px !important; } }
 
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)

@@ -4,6 +4,234 @@
 
     
 }
+.strech-colcust{
+    margin-bottom: 25px;
+}
+
+.tariff-container{
+    padding: 10px;
+
+    .tariffs{
+      background-color: $section-primary;
+      border-radius: $section-border-r;
+      padding: 48px 48px 88px;
+      &__heading{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 72px;
+          h2{
+              font-size: 40px;
+              font-weight: 700;
+              color: $color-primary;
+          }
+          .customtabs{
+              display: flex;
+              justify-content: flex-start;
+              margin: 0;
+          }
+      }
+  
+      &__tab1-content{
+          &__tariff{
+              border: 1px solid rgba(255,255,255,0.5);
+              border-radius: 8px;
+              padding: 21px 55px 21px 31px;
+              margin-bottom: 8px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              &:hover{
+                  border-color: $color-primary;
+              }
+              &__heading{
+                  display: flex;
+                  align-items: center;
+                  h4{
+                      font-size: 1.25rem;
+                      font-weight: 600;
+                      color: $color-white;
+                      margin-left: 32px;
+                      margin-right: 14px;
+                  }
+              }
+              &__body{
+                  display: flex;
+                  justify-content: space-between;
+                  .tariff-price{
+                      .product-type{
+                          color: $color-primary;
+                          margin-bottom: 5px;
+                      }
+                      .pricetariff{
+                          font-weight: 700;
+                          color: $color-white;
+                      }
+                  }
+                  .tariff-category{
+                      margin-left: 30px;
+                      .product-type{
+                          color: $color-primary;
+                          margin-bottom: 5px;
+                      }
+                      .pricetariff{
+                          font-weight: 700;
+                          color: $color-white;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  }
+
+  .tariff-container{
+      padding: 10px;
+    margin-top: 80px;
+   
+    .calculator{
+        background-color:$section-primary ;
+        border-radius: $section-border-r;
+        .calc{
+            padding: 64px 105px 48px;
+
+            &__heading{
+                text-align: center;
+
+                h2{
+                    color: $color-primary;
+                    font-weight: 700;
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    color: rgba(255,255,255,0.5);
+                    margin-bottom: 60px;
+                }
+            }
+
+            .typeofpackage{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                border: 0.2px solid rgba(255,255,255,0.2);
+                border-radius: 8px;
+                margin-bottom: 50px;
+
+                button{
+                    width: 100%;
+                    padding: 15px 40px;
+                    border-radius: 8px;
+                    background-color: $section-primary;
+                    border: none;
+                    outline: none;
+                    &:focus{
+                        background-color: $sectionitems-bg;
+                    }
+                    span{
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: $color-white;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                border: none;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                background: $color-primary;
+                margin-top: -4px;
+
+              
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            .range-content{
+            margin-bottom: 32px;
+            }
+
+            .services{
+                margin-top: 30px;
+                h5{
+                    font-size: 1rem;
+                    margin-bottom: 8px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+                &__list{
+                    &__item{
+                        position: relative;
+                        margin-bottom:15px !important;
+                        display: flex;
+                        align-items: center;
+                        &__servicesinpput{
+                            height: 24px;
+                            width: 24px;
+                            margin-right: 8px;
+                            border: 2px solid rgba(255,255,255,0.2);
+                            background-color: transparent;
+                            position: relative;
+                            border-radius: 0.25rem;
+                            caret-color: $color-primary;
+                        }
+                        .checkboxback{
+                            background-color: $color-primary;
+                        }
+
+                        label{
+                            color: rgba(255,255,255,0.5);
+                        }
+
+                        .tickcustom{
+                            position: absolute;
+                            left: 10px;
+                            top: 4px;
+                            display: none;
+                            svg{
+                                fill: black;
+                            }
+                            &.tickactive{
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+
+               
+            }
+            .customOperate{
+                margin: 56px auto 0;
+                max-width: 350px;
+                display: flex;
+                justify-content: center;
+                font-size: 1rem;
+               }
+
+               &__totalamount{
+                   margin-top: 60px;
+                   text-align: center;
+                   &__withdollar{
+                       font-size: 64px;
+                       font-weight: 600;
+                       color: $color-white;
+                   }
+                   &__withmanat{
+                       font-size: 32px;
+                   }
+               }
+
+            
+        }
+    }
+}
+  
 
 @media screen and (max-width:576px) {
      .pageheading{

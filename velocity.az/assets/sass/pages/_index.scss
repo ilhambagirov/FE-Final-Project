@@ -884,9 +884,13 @@ body{
     .carousel-cell{
         align-items: center;
     }
+    .header__top__inner{
+        margin: 0 !important;
+    }
 
     .header__top__inner__right{
-        margin-left: 130px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
    
