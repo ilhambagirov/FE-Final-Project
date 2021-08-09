@@ -1,0 +1,15 @@
+.tariff-container{
+    max-width: 960px;
+    margin: auto;
+
+    
+}
+
+@media screen and (max-width:576px) {
+     .pageheading{
+         h2{
+             font-size: 24px !important;
+         }
+     }
+ 
+ }

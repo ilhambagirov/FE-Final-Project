@@ -2112,6 +2112,14 @@ body {
   .about-info .heading h2 {
     font-size: 24px !important; } }
 
+.tariff-container {
+  max-width: 960px;
+  margin: auto; }
+
+@media screen and (max-width: 576px) {
+  .pageheading h2 {
+    font-size: 24px !important; } }
+
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
