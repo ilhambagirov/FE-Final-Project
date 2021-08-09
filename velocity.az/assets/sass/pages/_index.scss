@@ -341,7 +341,6 @@ body{
         border-radius: $section-border-r;
         .calc{
             padding: 64px 105px 48px;
-
             &__heading{
                 text-align: center;
 
@@ -395,11 +394,6 @@ body{
                 margin-top: -4px;
 
               
-            }
-            input::-webkit-outer-spin-button,
-            input::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
             }
             .range-content{
             margin-bottom: 32px;
