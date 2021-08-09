@@ -8,6 +8,7 @@
 @import './components/rangeslider';
 @import './components/tabs';
 @import './components/tarificons';
+@import './components/pageheading';
 
 
 // fonts scss file import
@@ -18,8 +19,15 @@
 
 //Pages
 @import './pages/index';
+@import './pages/prohibited';
+@import './pages/faq';
 
 //bootsrap import
+@import './bootstrap/scss/functions';
+@import './bootstrap/scss/mixins';
+@import './bootstrap/scss/variables';
+@import './bootstrap/scss/utilities';
 @import './bootstrap/scss/bootstrap-grid.scss';
+
 
 

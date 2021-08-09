@@ -69,7 +69,6 @@ a {
   color: #181C1F;
   border-radius: 8px;
   font-weight: 500;
-  transition: all 0.5s;
   border: none; }
   .btn:hover {
     background-color: #c9ffc7cc; }
@@ -160,6 +159,28 @@ i.tariff-icon {
   border-radius: 8px;
   display: inline-block;
   background-color: #22252C; }
+
+.pageheading {
+  position: relative; }
+  .pageheading h2 {
+    color: #c9ffc7;
+    font-size: 2.5rem !important;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.25rem; }
+  .pageheading p {
+    font-size: 1.125rem;
+    text-align: center; }
+  .pageheading::after {
+    content: '';
+    width: 5.625rem;
+    height: 0.25rem;
+    background-color: #c9ffc7;
+    position: absolute;
+    border-radius: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.25rem; }
 
 @font-face {
   font-family: 'Yolk';
@@ -1299,8 +1320,7 @@ body {
             position: absolute;
             top: 100%;
             left: 0;
-            transform: scaleY(2), scaleX(0.5);
-            transition: transform 0.3s; }
+            transform: scaleY(2), scaleX(0.5); }
             .header__top__inner__right__selection__default .list__item {
               padding: 0.5rem 1rem;
               background-color: #22252C;
@@ -1327,8 +1347,7 @@ body {
     .header__bottom__inner__nav__list__item > a {
       font-weight: 500;
       line-height: 2.5;
-      color: white !important;
-      transition: color 0.5s; }
+      color: white !important; }
       .header__bottom__inner__nav__list__item > a:hover {
         color: #afe7af !important; }
   .header__bottom__inner__nav__actions {
@@ -1337,8 +1356,7 @@ body {
     align-items: center; }
     .header__bottom__inner__nav__actions .account {
       vertical-align: top;
-      color: white;
-      transition: color 0.5s; }
+      color: white; }
       .header__bottom__inner__nav__actions .account:hover {
         color: #afe7af !important; }
     .header__bottom__inner__nav__actions .carta {
@@ -1944,6 +1962,108 @@ body {
 @media screen and (max-width: 340px) {
   .customOperate {
     padding: 19px 80px !important; } }
+
+.prohibited-page-container {
+  max-width: 960px;
+  margin: auto; }
+
+.terms {
+  margin-bottom: 3.75rem;
+  margin-top: 4.375rem; }
+  .terms .content {
+    margin-top: 4.375rem;
+    background-color: #31343b;
+    padding: 2.938rem 3rem 3.063rem;
+    border-radius: 0.5rem; }
+    .terms .content p {
+      font-size: 1.125rem;
+      line-height: 2rem; }
+    .terms .content li p {
+      position: relative; }
+      .terms .content li p::before {
+        position: absolute;
+        top: 0.938rem;
+        left: -1.563rem;
+        content: '';
+        width: 0.313rem;
+        height: 0.313rem;
+        background-color: #fff;
+        border-radius: 50%; }
+
+@media screen and (max-width: 992px) {
+  .prohibited-page-container {
+    max-width: 90%; } }
+
+@media screen and (max-width: 768px) {
+  .terms .pageheading h2 {
+    font-size: 2.188rem !important; }
+  .content p {
+    font-size: 1rem !important;
+    line-height: 1.5rem; } }
+
+@media screen and (max-width: 576px) {
+  .terms .pageheading h2 {
+    font-size: 1.5rem !important; }
+  .terms .pageheading p {
+    font-size: 1rem; }
+  .terms .content {
+    padding: 2rem 1rem 2.5rem !important; }
+    .terms .content li p::before {
+      left: -0.625rem; } }
+
+.faq {
+  margin-top: 4.375rem; }
+
+.faq-page-container {
+  max-width: 960px;
+  margin: auto; }
+
+.accordion-item {
+  margin-bottom: 20px; }
+
+#flip {
+  padding: 24px 24px;
+  cursor: pointer;
+  background-color: #31343b;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 8px; }
+
+.faq-content {
+  margin-top: 4.375rem; }
+
+#panel {
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #31343b; }
+
+#panel {
+  padding: 50px;
+  display: none; }
+  #panel.active {
+    display: block; }
+
+@media screen and (max-width: 992px) {
+  .faq-page-container {
+    max-width: 90%; } }
+
+@media screen and (max-width: 768px) {
+  .faq .pageheading h2 {
+    font-size: 2.188rem !important; }
+  .content p {
+    font-size: 1rem !important;
+    line-height: 1.5rem; } }
+
+@media screen and (max-width: 576px) {
+  .faq .pageheading h2 {
+    font-size: 1.5rem !important; }
+  .faq .pageheading p {
+    font-size: 1rem; }
+  .faq .content {
+    padding: 2rem 1rem 2.5rem !important; }
+    .faq .content li p::before {
+      left: -0.625rem; } }
 
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)

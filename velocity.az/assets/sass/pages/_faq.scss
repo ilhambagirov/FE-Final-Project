@@ -1,0 +1,89 @@
+.faq{
+    margin-top: 4.375rem;
+}
+
+.faq-page-container{
+    max-width: 960px;
+    margin: auto;
+}
+.accordion-item{
+  margin-bottom: 20px;
+  
+}
+#flip{
+  padding: 24px 24px;
+  cursor: pointer;
+  background-color: #31343b;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  
+}
+.faq-content{
+    margin-top:4.375rem ;
+}
+
+
+
+#panel{
+  border-radius: 8px;
+   margin-top: 5px;
+    padding: 5px;
+    background-color:#31343b ;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+  }
+
+  @media screen and(max-width:992px) {
+    .faq-page-container{
+      max-width: 90%;
+  }
+}
+
+@media screen and(max-width:768px) {
+    .faq{
+        .pageheading{
+            h2{
+                font-size: 2.188rem !important;
+            }
+        }
+    }
+
+    .content{
+        p{
+            font-size: 1rem !important;
+            line-height: 1.5rem;
+        }
+        
+    }
+}
+
+@media screen and(max-width:576px) {
+    .faq{
+        .pageheading{
+            h2{
+                font-size: 1.5rem !important;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .content{
+            padding: 2rem 1rem 2.5rem !important;
+            li{
+                p{
+                    &::before{
+                     left: -0.625rem;
+                    }
+                }
+            }
+        }
+    }
+}

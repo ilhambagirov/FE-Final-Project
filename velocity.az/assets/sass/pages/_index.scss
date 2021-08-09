@@ -173,7 +173,6 @@ body{
                             top: 100%;
                             left: 0;
                             transform:scaleY(2),scaleX(0.5);
-                            transition: transform 0.3s;
                         }
                         .opacity{
                             transform: scale(0);}
@@ -216,7 +215,6 @@ body{
                     font-weight: 500;
                     line-height: 2.5;
                     color: white !important;
-                    transition: color 0.5s;
                     &:hover{
                     color: rgb(175, 231, 175)!important;
                 }
@@ -231,8 +229,6 @@ body{
                 .account{
                     vertical-align: top;
                     color: white;
-                    transition: color 0.5s;
-
                     &:hover{
                         color:rgb(175, 231, 175)!important ;
                     }
