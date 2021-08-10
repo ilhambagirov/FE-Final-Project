@@ -2533,6 +2533,187 @@ body {
     margin-left: 0 !important;
     width: 100% !important; } }
 
+.tabspriority {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 60px;
+  height: 53px;
+  padding: 16px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2); }
+  .tabspriority .custompriority {
+    padding: 16px 30px;
+    width: 100%; }
+    .tabspriority .custompriority:hover {
+      background-color: #22252C;
+      border-radius: 8px; }
+
+.myregister {
+  display: flex;
+  margin-top: 60px;
+  background-color: #31343b;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  padding: 24px; }
+  .myregister .custommregaccount {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 64px;
+    width: 328px;
+    background-color: #c9ffc7; }
+    .myregister .custommregaccount h2 {
+      color: #181C1F;
+      margin-bottom: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 40px;
+      line-height: 56px; }
+    .myregister .custommregaccount a {
+      padding: 14px 30px;
+      border: 2px solid #181C1F;
+      border-radius: 8px;
+      width: 100% !important;
+      font-weight: 500;
+      color: #000;
+      text-align: center; }
+      .myregister .custommregaccount a:hover {
+        background-color: rgba(255, 255, 255, 0.11); }
+  .myregister .customloginaccount {
+    padding: 24px 48px 40px 24px;
+    width: calc(100% - 328px); }
+    .myregister .customloginaccount .registerpageregbtn {
+      width: 449px;
+      margin: auto;
+      padding: 16px 0;
+      text-align: center;
+      font-size: 1rem;
+      background-color: #c9ffc7;
+      color: #000;
+      border-radius: 8px;
+      margin-top: 30px; }
+    .myregister .customloginaccount .videoinstructior {
+      display: flex;
+      align-items: center; }
+      .myregister .customloginaccount .videoinstructior span {
+        margin-left: 10px;
+        font-size: 1rem; }
+    .myregister .customloginaccount .conditions {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .myregister .customloginaccount .conditions a {
+        color: #c9ffc7; }
+      .myregister .customloginaccount .conditions input {
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+        position: relative;
+        border-radius: 0.25rem; }
+      .myregister .customloginaccount .conditions .checkboxback {
+        background-color: #c9ffc7; }
+      .myregister .customloginaccount .conditions .tickcustom {
+        position: absolute;
+        left: 10px;
+        top: 4px;
+        display: none; }
+        .myregister .customloginaccount .conditions .tickcustom svg {
+          fill: black; }
+        .myregister .customloginaccount .conditions .tickcustom.tickactive {
+          display: inline; }
+    .myregister .customloginaccount .inputrow {
+      margin-top: 50px; }
+    .myregister .customloginaccount .pageheading p {
+      line-height: 28px !important; }
+    .myregister .customloginaccount .emailinput input,
+    .myregister .customloginaccount .passinput input {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 8px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      outline: none;
+      border: none;
+      height: 56px;
+      padding: 16px;
+      color: #fff;
+      background-color: #22252C; }
+    .myregister .customloginaccount .emailinput {
+      position: relative; }
+      .myregister .customloginaccount .emailinput #email:focus + .emaillabel {
+        position: absolute;
+        padding: 16px;
+        top: 10px;
+        left: 0;
+        font-size: 14px;
+        opacity: 0.5;
+        transition: top 0.2s; }
+      .myregister .customloginaccount .emailinput #email:focus {
+        padding-bottom: 5px; }
+      .myregister .customloginaccount .emailinput .emaillabel {
+        position: absolute;
+        padding: 16px;
+        top: 21px;
+        left: 0;
+        transition: top 0.2s; }
+    .myregister .customloginaccount .passinput {
+      position: relative; }
+      .myregister .customloginaccount .passinput #password:focus + .passlabel {
+        position: absolute;
+        padding: 16px;
+        top: 10px;
+        left: 0;
+        font-size: 14px;
+        opacity: 0.5;
+        transition: top 0.2s; }
+      .myregister .customloginaccount .passinput #password:focus {
+        padding-bottom: 5px; }
+      .myregister .customloginaccount .passinput .passlabel {
+        position: absolute;
+        padding: 16px;
+        top: 21px;
+        left: 0; }
+      .myregister .customloginaccount .passinput i {
+        position: absolute;
+        top: 37px;
+        right: 19px; }
+
+@media screen and (max-width: 992px) {
+  .registerpageregbtn {
+    width: 100% !important; }
+  .myregister {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .custommregaccount {
+    margin-top: 64px;
+    padding: 32px !important;
+    width: 100% !important; }
+  .customloginaccount {
+    padding: 24px 23px 40px 24px !important;
+    margin-left: 0 !important;
+    width: 100% !important; } }
+
+@media screen and (max-width: 500px) {
+  .tabspriority a {
+    width: 100% !important; }
+  .customloginaccount {
+    padding: 15px !important; } }
+
+@media screen and (max-width: 400px) {
+  .registerpageregbtn {
+    width: 90% !important; }
+  .customloginaccount {
+    padding: 0 !important; }
+  .myregister {
+    padding: 10px !important; } }
+
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
