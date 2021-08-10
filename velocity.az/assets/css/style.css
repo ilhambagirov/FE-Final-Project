@@ -2714,6 +2714,127 @@ body {
   .myregister {
     padding: 10px !important; } }
 
+.contact {
+  margin-bottom: 60px; }
+  .contact .contact-left {
+    padding: 31px 31px 47px;
+    background-color: #31343b;
+    border-radius: 8px;
+    height: 735px; }
+    .contact .contact-left .contact-heading-h6 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      color: #fff;
+      margin-bottom: 40px; }
+    .contact .contact-left .card-heading {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-right: 20px; }
+      .contact .contact-left .card-heading img {
+        width: inherit;
+        height: inherit;
+        padding: 23px; }
+    .contact .contact-left .contact-info li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px; }
+      .contact .contact-left .contact-info li h6 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+        line-height: 28px; }
+      .contact .contact-left .contact-info li p {
+        font-size: 14px;
+        line-height: 24px; }
+    .contact .contact-left .followus {
+      margin-top: 73px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #fff; }
+    .contact .contact-left .social-medias i {
+      margin-right: 20px; }
+  .contact .contact-right {
+    padding: 31px 31px 47px;
+    background-color: #31343b;
+    border-radius: 8px;
+    height: 735px; }
+    .contact .contact-right .sumbitconact a {
+      padding: 18px 40px; }
+    .contact .contact-right .contact-heading-right h6 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      color: #fff;
+      margin-bottom: 21px; }
+    .contact .contact-right .contact-heading-right p {
+      margin-bottom: 18px; }
+    .contact .contact-right .textareainput {
+      position: relative; }
+      .contact .contact-right .textareainput textarea {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        outline: none;
+        border: none;
+        height: 100px !important;
+        padding: 16px;
+        color: #fff;
+        background-color: #22252C; }
+      .contact .contact-right .textareainput .textarealabel {
+        position: absolute;
+        padding: 16px;
+        top: 18px;
+        left: 0;
+        transition: top 0.2s; }
+    .contact .contact-right .emailinput input {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 8px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      outline: none;
+      border: none;
+      height: 56px;
+      padding: 16px;
+      color: #fff;
+      background-color: #22252C; }
+    .contact .contact-right .emailinput {
+      position: relative; }
+      .contact .contact-right .emailinput #email:focus + .emaillabel {
+        position: absolute;
+        padding: 16px;
+        top: 10px;
+        left: 0;
+        font-size: 14px;
+        opacity: 0.5;
+        transition: top 0.2s; }
+      .contact .contact-right .emailinput #email:focus {
+        padding-bottom: 5px; }
+      .contact .contact-right .emailinput .emaillabel {
+        position: absolute;
+        padding: 16px;
+        top: 21px;
+        left: 0;
+        transition: top 0.2s; }
+
+@media screen and (max-width: 992px) {
+  .custom-contactcontainer {
+    max-width: 90% !important; }
+    .custom-contactcontainer .contact-left {
+      margin-bottom: 50px; } }
+
+@media screen and (max-width: 576px) {
+  .custom-contactcontainer {
+    padding: 0 !important; } }
+
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

@@ -1,0 +1,172 @@
+.contact{
+    .contact-left{
+        padding: 31px 31px 47px;
+        background-color: #31343b ;
+        border-radius: 8px;
+        height: 735px;
+        .contact-heading-h6{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        .card-heading{
+                width: 70px;
+                height: 70px;
+                border-radius: 8px;
+                border: 1px solid rgba(255,255,255,0.2);
+                margin-right: 20px;
+               img{
+                width: inherit;
+                height: inherit;
+                padding: 23px;
+                
+                   
+                
+               }
+        }
+
+        .contact-info{
+            li{
+                display: flex; 
+                align-items: center;
+                margin-bottom: 40px;
+                h6{
+                font-size: 1rem;
+                font-weight: 700;
+                color: #fff;
+                line-height: 28px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+            }
+           
+        }
+
+        .followus{
+            margin-top: 73px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+        .social-medias
+        {
+            i{
+                margin-right: 20px;
+            }
+        }
+    }
+    .contact-right{
+        padding: 31px 31px 47px;
+        background-color: #31343b ;
+        border-radius: 8px;
+        height: 735px;
+
+        .sumbitconact{
+            a{
+                padding: 18px 40px ;
+            }
+        }
+
+        .contact-heading-right{
+           h6{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+            color: #fff;
+            margin-bottom: 21px;
+           }
+           p{
+               margin-bottom: 18px;
+           }
+        }
+
+        .textareainput 
+        {   
+            position: relative;
+            textarea{
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            outline: none;
+            border: none;
+            height: 100px !important;
+            padding: 16px;
+            color: #fff;
+            background-color: #22252C;
+        }
+        .textarealabel{
+            position: absolute;
+            padding: 16px;
+            top: 18px;
+            left: 0;
+            transition: top 0.2s;
+        }
+
+        }
+     
+        .emailinput input{
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            outline: none;
+            border: none;
+            height: 56px;
+            padding: 16px;
+            color: #fff;
+            background-color: #22252C;
+
+        }
+        .emailinput{
+            position: relative;
+            #email:focus+ .emaillabel
+               {
+                    position: absolute;
+                    padding: 16px;
+                    top: 10px;
+                    left: 0;
+                    font-size: 14px;
+                    opacity: 0.5;
+                    transition: top 0.2s;
+               }
+               #email:focus{
+                   padding-bottom: 5px;
+               }
+            .emaillabel{
+            position: absolute;
+            padding: 16px;
+            top: 21px;
+            left: 0;
+            transition: top 0.2s;
+        }
+        }
+    }
+    margin-bottom: 60px;
+}
+
+@media screen and(max-width:992px) {
+    .custom-contactcontainer{
+      max-width: 90% !important;
+
+      .contact-left{
+          margin-bottom: 50px;
+      }
+  }
+}
+
+@media screen and(max-width:576px) {
+    .custom-contactcontainer{
+     padding: 0 !important;
+    
+  }
+}
