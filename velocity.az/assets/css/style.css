@@ -3,6 +3,9 @@ body {
   font-weight: 300;
   font-size: 1rem; }
 
+.container {
+  max-width: 1194px !important; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -1530,6 +1533,9 @@ body {
         .customcalcmt .calculator .calc__totalamount__withmanat {
           font-size: 32px; }
 
+.how-we-work ::-webkit-scrollbar {
+  display: none; }
+
 .how-we-work__heading {
   margin-top: 80px;
   font-size: 40px !important;
@@ -1542,7 +1548,7 @@ body {
   overflow-x: auto;
   display: flex; }
   .how-we-work__content .strech-col {
-    width: 415px;
+    width: 373px;
     height: 368px; }
     .how-we-work__content .strech-col .box {
       background-color: #31343b;
@@ -1787,12 +1793,18 @@ body {
       margin-right: 20px !important; }
 
 @media screen and (max-width: 1200px) {
+  .containerr {
+    max-width: 90%; }
   .flickity-viewport {
     height: 441px !important; }
   .carousel-cell__info h1 {
     font-size: 35px; } }
 
 @media screen and (max-width: 992px) {
+  .carousel-cell {
+    align-items: center; }
+  .header__top__inner__right {
+    margin-left: 130px; }
   .header__bottom__inner__nav__list {
     display: none; }
   .header__bottom__inner__nav {
@@ -1849,6 +1861,8 @@ body {
         overflow: hidden; } }
 
 @media screen and (max-width: 768px) {
+  .icon-cart {
+    display: none; }
   .header__top {
     display: none; }
   .header__bottom__inner__nav {
@@ -2118,6 +2132,36 @@ body {
 
 @media screen and (max-width: 576px) {
   .pageheading h2 {
+    font-size: 24px !important; } }
+
+.services {
+  margin-top: 60px;
+  background-color: #31343b;
+  border-radius: 8px;
+  padding: 48px 32px 34px; }
+  .services .services-content {
+    margin-top: 60px; }
+    .services .services-content .strech-colcust {
+      flex: 1 1 auto;
+      padding-left: 16px;
+      padding-right: 16px; }
+      .services .services-content .strech-colcust .news-box {
+        padding: 31px;
+        height: 300px;
+        border: 1px solid white;
+        border-radius: 8px; }
+        .services .services-content .strech-colcust .news-box .card-heading div {
+          width: 70px;
+          height: 70px;
+          border-radius: 8px;
+          background-color: #22252C; }
+          .services .services-content .strech-colcust .news-box .card-heading div img {
+            width: inherit;
+            height: inherit;
+            padding: 10px; }
+
+@media screen and (max-width: 576px) {
+  .services .pageheading h2 {
     font-size: 24px !important; } }
 
 /*!

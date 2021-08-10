@@ -110,6 +110,7 @@ body{
         }
 
         &__right{
+            
             @include flexbox;
             &__currency{
                 width: 150px;
@@ -481,6 +482,9 @@ body{
 
 //section how we work
 .how-we-work{
+    ::-webkit-scrollbar {
+        display: none;
+    }
     &__heading{
         margin-top: 80px;
         font-size: 40px !important;
@@ -494,7 +498,7 @@ body{
         overflow-x: auto;
         display: flex;
         .strech-col{
-            width: 415px ;
+            width: 373px ;
             height:368px;
             .box{
                 background-color: $section-primary;
@@ -862,6 +866,9 @@ body{
  //Media screens
 
  @media screen and(max-width:1200px) {
+    .containerr{
+        max-width: 90%;
+    }
     .flickity-viewport{
         height: 441px !important;
     }
@@ -873,6 +880,16 @@ body{
     }
 }
 @media screen and(max-width:992px) {
+
+    .carousel-cell{
+        align-items: center;
+    }
+
+    .header__top__inner__right{
+        margin-left: 130px;
+    }
+
+   
     .header__bottom__inner__nav__list{
         display: none;
     }
@@ -963,6 +980,11 @@ body{
 }
 
 @media screen and(max-width:768px) {
+    .icon-cart{
+        display: none;
+    }
+
+    
     .header__top{
         display: none;
     }
@@ -1059,6 +1081,7 @@ body{
 
 
 @media screen and(max-width:576px) {
+   
     
     .header__bottom__inner__nav{
         position: relative;

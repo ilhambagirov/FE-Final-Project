@@ -1,0 +1,49 @@
+.services{
+    margin-top: 60px;
+    background-color: #31343b;
+    border-radius: 8px;
+    padding: 48px 32px 34px;
+    .services-content{
+    margin-top: 60px;
+    .strech-colcust{
+        flex: 1 1 auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        .news-box{
+            padding: 31px;
+            height: 300px;
+            border: 1px solid white;
+            border-radius: 8px;
+            .card-heading{
+                div{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 8px;
+                    background-color: #22252C;
+                   img{
+                    width: inherit;
+                    height: inherit;
+                    padding: 10px;
+                   }
+                }
+            }
+        }
+        
+   }
+}
+}
+
+
+
+
+@media screen and(max-width:576px) {
+    .services{
+        .pageheading{
+            h2{
+                font-size: 24px !important;
+            }
+        }
+        
+    }
+
+}
