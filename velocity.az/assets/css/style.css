@@ -2310,6 +2310,12 @@ body {
         padding: 31px;
         border: 1px solid white;
         border-radius: 8px; }
+        .services .services-content .strech-colcust .news-box:hover {
+          border-color: #c9ffc7; }
+        .services .services-content .strech-colcust .news-box:hover .service-card-title a {
+          color: #c9ffc7; }
+        .services .services-content .strech-colcust .news-box:hover .service-card-title p {
+          color: #fff; }
         .services .services-content .strech-colcust .news-box .card-heading div {
           width: 70px;
           height: 70px;
@@ -2356,6 +2362,176 @@ body {
     line-height: 32px; }
   .service-card-title p {
     font-size: 14px !important; } }
+
+.myaccount {
+  display: flex;
+  margin-top: 60px;
+  background-color: #31343b;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  padding: 24px; }
+  .myaccount .registration_myaccount {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 64px;
+    width: 497px;
+    background-color: #c9ffc7; }
+    .myaccount .registration_myaccount h2 {
+      color: #181C1F;
+      margin-bottom: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      font-size: 40px;
+      line-height: 56px; }
+    .myaccount .registration_myaccount a {
+      padding: 14px 30px;
+      border: 2px solid #181C1F;
+      border-radius: 8px;
+      width: 100% !important;
+      font-weight: 500;
+      color: #000;
+      text-align: center; }
+      .myaccount .registration_myaccount a:hover {
+        background-color: rgba(255, 255, 255, 0.11); }
+  .myaccount .login-myaccount {
+    margin-left: 48px;
+    padding: 24px 64px 32px 64px;
+    width: calc(100% - 497px); }
+    .myaccount .login-myaccount .pageheading p {
+      line-height: 28px !important; }
+    .myaccount .login-myaccount .login-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px; }
+      .myaccount .login-myaccount .login-content .emailinput input,
+      .myaccount .login-myaccount .login-content .passinput input {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        outline: none;
+        border: none;
+        height: 56px;
+        padding: 16px;
+        color: #fff;
+        background-color: #22252C; }
+      .myaccount .login-myaccount .login-content .emailinput {
+        position: relative; }
+        .myaccount .login-myaccount .login-content .emailinput #email:focus + .emaillabel {
+          position: absolute;
+          padding: 16px;
+          top: 10px;
+          left: 0;
+          font-size: 14px;
+          opacity: 0.5;
+          transition: top 0.2s; }
+        .myaccount .login-myaccount .login-content .emailinput #email:focus {
+          padding-bottom: 5px; }
+        .myaccount .login-myaccount .login-content .emailinput .emaillabel {
+          position: absolute;
+          padding: 16px;
+          top: 21px;
+          left: 0;
+          transition: top 0.2s; }
+      .myaccount .login-myaccount .login-content .passinput {
+        position: relative; }
+        .myaccount .login-myaccount .login-content .passinput #password:focus + .passlabel {
+          position: absolute;
+          padding: 16px;
+          top: 10px;
+          left: 0;
+          font-size: 14px;
+          opacity: 0.5;
+          transition: top 0.2s; }
+        .myaccount .login-myaccount .login-content .passinput #password:focus {
+          padding-bottom: 5px; }
+        .myaccount .login-myaccount .login-content .passinput .passlabel {
+          position: absolute;
+          padding: 16px;
+          top: 21px;
+          left: 0; }
+        .myaccount .login-myaccount .login-content .passinput i {
+          position: absolute;
+          top: 37px;
+          right: 19px; }
+      .myaccount .login-myaccount .login-content .storing {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        position: relative; }
+        .myaccount .login-myaccount .login-content .storing input {
+          height: 24px;
+          width: 24px;
+          margin-right: 8px;
+          border: 2px solid rgba(255, 255, 255, 0.2);
+          background-color: transparent;
+          position: relative;
+          border-radius: 0.25rem; }
+        .myaccount .login-myaccount .login-content .storing .checkboxback {
+          background-color: #c9ffc7; }
+        .myaccount .login-myaccount .login-content .storing .tickcustom {
+          position: absolute;
+          left: 10px;
+          top: 4px;
+          display: none; }
+          .myaccount .login-myaccount .login-content .storing .tickcustom svg {
+            fill: black; }
+          .myaccount .login-myaccount .login-content .storing .tickcustom.tickactive {
+            display: inline; }
+      .myaccount .login-myaccount .login-content .enter {
+        margin-top: 56px;
+        padding: 16px 30px;
+        background-color: #c9ffc7;
+        border-radius: 8px;
+        width: 100% !important;
+        font-weight: 500;
+        color: #000;
+        text-align: center; }
+        .myaccount .login-myaccount .login-content .enter:hover {
+          background-color: rgba(201, 255, 199, 0.8); }
+      .myaccount .login-myaccount .login-content .forgotpasword {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .myaccount .login-myaccount .login-content .forgotpasword:hover svg {
+          fill: #fff; }
+        .myaccount .login-myaccount .login-content .forgotpasword:hover span {
+          color: #fff; }
+        .myaccount .login-myaccount .login-content .forgotpasword i svg {
+          fill: #c9ffc7; }
+        .myaccount .login-myaccount .login-content .forgotpasword span {
+          color: #c9ffc7;
+          font-size: 1rem; }
+
+@media screen and (max-width: 1200px) {
+  .registration_myaccount {
+    width: 328px !important; }
+    .registration_myaccount a {
+      padding-left: 0 !important;
+      padding-right: 0 !important; }
+  .login-myaccount {
+    padding: 0 !important;
+    width: calc(100% - 328px) !important; } }
+
+@media screen and (max-width: 992px) {
+  .myaccount {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .registration_myaccount {
+    margin-top: 64px;
+    padding: 32px !important;
+    width: 100% !important; }
+  .login-myaccount {
+    order: -1;
+    margin-left: 0 !important;
+    width: 100% !important; } }
 
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)

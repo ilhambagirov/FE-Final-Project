@@ -1,0 +1,235 @@
+.myaccount{
+    display: flex;
+    margin-top: 60px;
+    background-color:#31343b;
+    border-radius: 8px;
+    margin-bottom: 60px;
+    padding: 24px;
+    .registration_myaccount{
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 64px;
+        width: 497px;
+        background-color: #c9ffc7;
+        h2{
+            color: #181C1F;
+            margin-bottom: 40px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            font-size: 40px;
+            line-height: 56px;
+        }
+        a{
+            padding: 14px 30px;
+            border: 2px solid #181C1F;
+            border-radius: 8px;
+            width: 100% !important;
+            font-weight: 500;
+            color: #000;
+            text-align: center;
+            &:hover{
+                background-color: rgba(255,255,255,0.11);
+            
+            }
+        }
+    }
+    .login-myaccount{
+
+        .pageheading{
+            p{
+                line-height: 28px !important;
+            }
+        }
+        margin-left: 48px;
+        padding: 24px 64px 32px 64px;
+        width: calc(100% - 497px);
+        .login-content{
+
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            .emailinput input,
+             .passinput input{
+                width: 100%;
+                font-size: 1rem;
+                font-weight: 500;
+                border-radius: 8px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                outline: none;
+                border: none;
+                height: 56px;
+                padding: 16px;
+                color: #fff;
+                background-color: #22252C;
+            }
+
+            .emailinput{
+                position: relative;
+                #email:focus+ .emaillabel
+                   {
+                        position: absolute;
+                        padding: 16px;
+                        top: 10px;
+                        left: 0;
+                        font-size: 14px;
+                        opacity: 0.5;
+                        transition: top 0.2s;
+                   }
+                   #email:focus{
+                       padding-bottom: 5px;
+                   }
+                .emaillabel{
+                   
+                position: absolute;
+                padding: 16px;
+                top: 21px;
+                left: 0;
+                transition: top 0.2s;
+            }
+            }
+            .passinput{
+                position: relative;
+                #password:focus+ .passlabel
+                {
+                     position: absolute;
+                     padding: 16px;
+                     top: 10px;
+                     left: 0;
+                     font-size: 14px;
+                     opacity: 0.5;
+                     transition: top 0.2s;
+                }
+                #password:focus{
+                    padding-bottom: 5px;
+                }
+                .passlabel{
+                position: absolute;
+                padding: 16px;
+                top: 21px;
+                left: 0;
+
+                
+            }
+            i{
+                   position: absolute;
+                   top: 37px;
+                   right: 19px;
+                }
+            }
+
+            .storing{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                input{
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 8px;
+                    border: 2px solid rgba(255,255,255,0.2);
+                    background-color: transparent;
+                    position: relative;
+                    border-radius: 0.25rem;
+                }
+                .checkboxback{
+                    background-color: $color-primary;
+                }
+               .tickcustom
+               {
+                  
+                position: absolute;
+                left: 10px;
+                top: 4px;
+                display: none;
+                svg{
+                    fill: black;
+                }
+                &.tickactive{
+                    display: inline;
+                }
+               }
+
+            }
+            .enter{
+                margin-top: 56px ;
+                padding: 16px 30px;
+                background-color:  $color-primary;
+                border-radius: 8px;
+                width: 100% !important;
+                font-weight: 500;
+                color: #000;
+                text-align: center;
+                &:hover{
+                    background-color: rgba(201,255,199,0.8);
+                }
+            }
+
+            .forgotpasword{
+                margin-top: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover svg{
+                    fill: #fff;
+                }
+                &:hover span{
+                    color: #fff;
+                }
+                i
+                {
+                   svg
+                   {
+                    fill: $color-primary;
+                   }
+                }
+                span{
+                    color: $color-primary;
+                    font-size: 1rem;
+                }
+            }
+            
+        }
+    }
+
+    
+}
+
+@media screen and(max-width:1200px) {
+    .registration_myaccount{
+        width: 328px !important;
+        a{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+    .login-myaccount{
+        padding: 0 !important;
+         width: calc(100% - 328px) !important;
+    }
+}
+
+@media screen and(max-width:992px) {
+   .myaccount{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      
+   }
+   .registration_myaccount{
+       margin-top: 64px;
+       padding: 32px !important;
+       width: 100% !important;
+       
+   }
+
+   .login-myaccount{
+       order: -1;
+       margin-left: 0 !important;
+       width: 100% !important;
+   }
+}
+
