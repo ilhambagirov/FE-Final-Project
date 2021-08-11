@@ -1,0 +1,173 @@
+.news-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.newspage{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    .pageheading{
+        margin: 0 auto;
+     
+}
+
+.news-container{
+    margin-top: 90px;
+
+    .innovationtabs{
+        margin-bottom: 70px;
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            border:1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            overflow-x: auto;
+            li{
+                padding: 18px 27px;
+                min-width: 150px;
+                text-align: center;
+                &:hover{
+                    background-color: #3B4046;
+                    border-radius: 8px;
+                    span{
+                        color: #c9ffc7;
+                    }
+                }
+            }
+        }
+    }
+    .innovationcards{
+        .cardinnovation{
+            display: flex;
+            align-items: center;
+            background-color: #3B4046;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+
+            &:hover{
+                border: 1px solid #C9FFC7;
+            }
+            &:hover .card-body h6{
+                color: #C9FFC7;
+            }
+
+            .card-body{
+                margin-left: 32px;
+                padding: 24px 0;
+
+                h6{
+                    font-weight: 700;
+                    color: #fff;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                p{
+                    margin-bottom: 24px;
+                }
+                a{
+                    color: #C9FFC7;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+   
+}
+}
+ .pagination{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 60px;
+        li{
+            background-color: #31343b;
+            margin-right: 5px;
+            border-radius: 8px;
+            a{
+                color: #fff;
+                text-align: center;
+                padding: 6px;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                &:hover{
+                    color: #C9FFC7;
+                }
+            }
+        }
+    }
+@media screen and (max-width:992px) {
+
+        .news-container{
+            width: 90% !important;
+            // margin-left: 20px !important;
+            // margin-right: 20px !important;
+        }
+}
+
+@media screen and (max-width:768px) {
+
+    .pagination{
+        justify-content: center;
+    }
+
+    .newspage{
+
+        .pageheading{
+            margin-bottom: 40px !important;
+        }
+        .news-container{
+            margin-top: 50px !important;
+            width: 90% !important;
+            // margin-left: 20px !important;
+            // margin-right: 20px !important;
+        }
+        .innovationtabs{
+            justify-content: flex-start !important;
+            margin-bottom:  25px !important;
+            ul{
+                border: none !important;
+                .tab{
+                    min-width: 110px !important;
+                    border: 1px solid rgba(255,255,255,0.2);
+                    border-radius: 8px;
+                    margin-right: 10px;
+                }
+            }
+        }
+}}
+@media screen and (max-width:576px) {
+
+    .newspage{
+    .pageheading{
+        margin: 0 auto;
+        h2{
+            margin-bottom: 9px;
+        }
+        p{
+            font-size: 14px !important;
+            line-height: 24px !important;
+        }
+    }
+    .cardinnovation{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        img{
+            width: 100%;
+        }
+
+        .card-body{
+            padding: 16px !important;
+            margin: 0 !important;
+        }
+    }
+}}

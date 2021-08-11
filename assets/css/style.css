@@ -2720,7 +2720,7 @@ body {
     padding: 31px 31px 47px;
     background-color: #31343b;
     border-radius: 8px;
-    height: 735px; }
+    min-height: 735px; }
     .contact .contact-left .contact-heading-h6 {
       font-weight: 600;
       font-size: 20px;
@@ -2834,6 +2834,124 @@ body {
 @media screen and (max-width: 576px) {
   .custom-contactcontainer {
     padding: 0 !important; } }
+
+.news-container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.newspage {
+  margin-top: 70px;
+  margin-bottom: 30px; }
+  .newspage .pageheading {
+    margin: 0 auto; }
+  .newspage .news-container {
+    margin-top: 90px; }
+    .newspage .news-container .innovationtabs {
+      margin-bottom: 70px;
+      display: flex;
+      justify-content: center; }
+      .newspage .news-container .innovationtabs ::-webkit-scrollbar {
+        display: none; }
+      .newspage .news-container .innovationtabs ul {
+        display: flex;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        overflow-x: auto; }
+        .newspage .news-container .innovationtabs ul li {
+          padding: 18px 27px;
+          min-width: 150px;
+          text-align: center; }
+          .newspage .news-container .innovationtabs ul li:hover {
+            background-color: #3B4046;
+            border-radius: 8px; }
+            .newspage .news-container .innovationtabs ul li:hover span {
+              color: #c9ffc7; }
+    .newspage .news-container .innovationcards .cardinnovation {
+      display: flex;
+      align-items: center;
+      background-color: #3B4046;
+      padding: 24px;
+      margin-bottom: 16px;
+      border: 1px solid transparent;
+      border-radius: 8px; }
+      .newspage .news-container .innovationcards .cardinnovation:hover {
+        border: 1px solid #C9FFC7; }
+      .newspage .news-container .innovationcards .cardinnovation:hover .card-body h6 {
+        color: #C9FFC7; }
+      .newspage .news-container .innovationcards .cardinnovation .card-body {
+        margin-left: 32px;
+        padding: 24px 0; }
+        .newspage .news-container .innovationcards .cardinnovation .card-body h6 {
+          font-weight: 700;
+          color: #fff;
+          font-size: 20px;
+          line-height: 28px; }
+        .newspage .news-container .innovationcards .cardinnovation .card-body p {
+          margin-bottom: 24px; }
+        .newspage .news-container .innovationcards .cardinnovation .card-body a {
+          color: #C9FFC7;
+          font-size: 1rem; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 60px; }
+  .pagination li {
+    background-color: #31343b;
+    margin-right: 5px;
+    border-radius: 8px; }
+    .pagination li a {
+      color: #fff;
+      text-align: center;
+      padding: 6px;
+      display: inline-block;
+      width: 32px;
+      height: 32px; }
+      .pagination li a:hover {
+        color: #C9FFC7; }
+
+@media screen and (max-width: 992px) {
+  .news-container {
+    width: 90% !important; } }
+
+@media screen and (max-width: 768px) {
+  .pagination {
+    justify-content: center; }
+  .newspage .pageheading {
+    margin-bottom: 40px !important; }
+  .newspage .news-container {
+    margin-top: 50px !important;
+    width: 90% !important; }
+  .newspage .innovationtabs {
+    justify-content: flex-start !important;
+    margin-bottom: 25px !important; }
+    .newspage .innovationtabs ul {
+      border: none !important; }
+      .newspage .innovationtabs ul .tab {
+        min-width: 110px !important;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin-right: 10px; } }
+
+@media screen and (max-width: 576px) {
+  .newspage .pageheading {
+    margin: 0 auto; }
+    .newspage .pageheading h2 {
+      margin-bottom: 9px; }
+    .newspage .pageheading p {
+      font-size: 14px !important;
+      line-height: 24px !important; }
+  .newspage .cardinnovation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important; }
+    .newspage .cardinnovation img {
+      width: 100%; }
+    .newspage .cardinnovation .card-body {
+      padding: 16px !important;
+      margin: 0 !important; } }
 
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
