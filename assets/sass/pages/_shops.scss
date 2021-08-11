@@ -1,0 +1,43 @@
+.shops{
+    margin-top: 70px;
+    .pageheading{
+        margin-bottom: 92px;
+        p{
+            line-height: 32px;
+        }
+    }
+    .shopstabs,.tabs{
+        
+        justify-content: center;
+
+        .customshopstab{
+            background-color:#22252C ;
+        }
+        a{
+            padding: 14.3px 45px ;
+            border-radius: 8px;
+            background-color: #31343b;
+           border: 0.2px solid rgba(194, 192, 192, 0.472);
+           margin-right: 10px;
+            span{
+                margin-left: 5px;
+                font-size: 1rem;
+                font-weight: 500;
+                color: $color-white;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .shops{
+        margin-top: 32px !important;
+        .pageheading{
+            p{
+                font-size: 14px !important;
+                line-height: 24px !important;
+            }
+        }
+    }
+}
