@@ -3029,8 +3029,51 @@ body {
         height: inherit;
         background-color: #fff;
         padding: 2px; }
+  .shops .shops-dropdown {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px 10px;
+    margin-bottom: 40px;
+    background-color: #3B4046;
+    border-radius: 8px; }
+    .shops .shops-dropdown .heading-compact-shops p {
+      color: rgba(255, 255, 255, 0.5); }
+    .shops .shops-dropdown .heading-compact-shops h6 {
+      font-weight: 500;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.5); }
+  .shops .dropdown-categories {
+    width: 100%;
+    height: 100vh;
+    background-color: #22252C;
+    position: fixed;
+    padding: 20px 16px 16px;
+    overflow-y: scroll;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    transition: right 0.5s ease; }
+    .shops .dropdown-categories .dropdown-aside {
+      width: auto; }
+      .shops .dropdown-categories .dropdown-aside h2 {
+        margin-bottom: 50px; }
+  .shops .shopsactive {
+    width: 100%;
+    right: 0;
+    transition: right 0.5s ease; }
 
 @media screen and (max-width: 992px) {
+  .shops-dropdown {
+    display: flex !important; }
+  .shopscontent {
+    flex-direction: column;
+    justify-content: center; }
+    .shopscontent .brands-shops {
+      justify-content: center;
+      width: auto; }
+  .sidebar-shops {
+    display: none; }
   .shopstabs a {
     min-width: auto !important; } }
 
