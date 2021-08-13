@@ -1886,7 +1886,7 @@ body {
     height: 665px !important; }
   .typeofpackage button {
     padding: 14px 20px !important; }
-  .tabs span {
+  .tabs .country {
     display: none; }
   .calc {
     padding: 30px; }
@@ -1905,7 +1905,6 @@ body {
     display: block;
     background-color: #22252C;
     border: 0.2px solid rgba(194, 192, 192, 0.472);
-    padding: 16px;
     text-align: center;
     border-radius: 8px;
     color: #C9FFC7; }
@@ -2960,7 +2959,8 @@ body {
     .shops .pageheading p {
       line-height: 32px; }
   .shops .shopstabs, .shops .tabs {
-    justify-content: center; }
+    justify-content: center;
+    overflow-x: auto; }
     .shops .shopstabs .customshopstab, .shops .tabs .customshopstab {
       background-color: #22252C; }
     .shops .shopstabs a, .shops .tabs a {
@@ -2968,19 +2968,88 @@ body {
       border-radius: 8px;
       background-color: #31343b;
       border: 0.2px solid rgba(194, 192, 192, 0.472);
-      margin-right: 10px; }
+      margin-right: 10px;
+      min-width: 152px;
+      text-align: center; }
       .shops .shopstabs a span, .shops .tabs a span {
         margin-left: 5px;
         font-size: 1rem;
         font-weight: 500;
         color: #fff; }
+  .shops .shopscontent {
+    display: flex; }
+    .shops .shopscontent .sidebar-shops {
+      background-color: #31343b;
+      width: 370px;
+      max-width: 370px;
+      padding: 32px 16px 40px;
+      margin-right: 48px;
+      height: fit-content;
+      border-radius: 8px; }
+      .shops .shopscontent .sidebar-shops h2 {
+        color: #C9FFC7;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 24px;
+        padding-left: 16px;
+        padding-right: 16px; }
+      .shops .shopscontent .sidebar-shops ul .selected {
+        background-color: #22252C;
+        border-radius: 8px; }
+        .shops .shopscontent .sidebar-shops ul .selected span {
+          color: #C9FFC7; }
+      .shops .shopscontent .sidebar-shops ul li {
+        padding: 12px 16px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center; }
+        .shops .shopscontent .sidebar-shops ul li:hover {
+          background-color: rgba(201, 255, 199, 0.1);
+          border-radius: 4px !important; }
+        .shops .shopscontent .sidebar-shops ul li:hover a {
+          color: #c9ffc7; }
+        .shops .shopscontent .sidebar-shops ul li a {
+          display: flex;
+          color: #fff;
+          width: 100%;
+          margin-left: 16px; }
+  .shops .brands-shops {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: calc(100% - 370px); }
+    .shops .brands-shops .shopitem {
+      border-radius: 8px;
+      width: 170px !important;
+      height: 170px !important;
+      overflow: hidden; }
+      .shops .brands-shops .shopitem img {
+        width: inherit;
+        height: inherit;
+        background-color: #fff;
+        padding: 2px; }
+
+@media screen and (max-width: 992px) {
+  .shopstabs a {
+    min-width: auto !important; } }
+
+@media screen and (max-width: 768px) {
+  .customshopstab {
+    margin-top: 0 !important; }
+    .customshopstab span {
+      display: none; } }
 
 @media screen and (max-width: 576px) {
   .shops {
     margin-top: 32px !important; }
     .shops .pageheading p {
       font-size: 14px !important;
-      line-height: 24px !important; } }
+      line-height: 24px !important; }
+  .shopstabs a {
+    padding: 14.3px 25px !important; }
+  .shopstabs button {
+    padding: 10px 15px !important; } }
 
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
