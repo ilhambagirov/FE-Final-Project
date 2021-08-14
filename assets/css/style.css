@@ -185,6 +185,68 @@ i.tariff-icon {
     transform: translateX(-50%);
     bottom: -1.25rem; }
 
+.help .chat {
+  position: fixed;
+  bottom: 23px;
+  right: 30px;
+  z-index: 6; }
+
+.help .popup-chat {
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  background-color: #fff;
+  height: 414px;
+  width: 375px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 6;
+  border-radius: 8px; }
+  .help .popup-chat .chat-content {
+    padding: 32px 24px; }
+    .help .popup-chat .chat-content .chat-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .help .popup-chat .chat-content .chat-heading img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; }
+    .help .popup-chat .chat-content .chat-body {
+      color: #000;
+      margin-top: 20px; }
+      .help .popup-chat .chat-content .chat-body .replyinfo {
+        margin-top: 5px;
+        opacity: 0.8;
+        font-size: 13px; }
+      .help .popup-chat .chat-content .chat-body .infoaboutquestions {
+        margin-top: 30px;
+        font-size: 15px;
+        margin-bottom: 30px; }
+      .help .popup-chat .chat-content .chat-body .messengerbtn {
+        padding: 16px 88px;
+        background-color: #16e90f;
+        color: white;
+        font-weight: 600;
+        border-radius: 8px; }
+      .help .popup-chat .chat-content .chat-body .guestbtn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 16px 94px;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: black;
+        font-weight: 600;
+        border-radius: 8px; }
+      .help .popup-chat .chat-content .chat-body .privacy-chat {
+        font-size: 15px; }
+        .help .popup-chat .chat-content .chat-body .privacy-chat a {
+          color: black;
+          font-weight: 600; }
+
+.help .popup-chat.activechat {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.5s ease; }
+
 @font-face {
   font-family: 'Yolk';
   src: url("../fonts/Yolk-Bold.eot");
@@ -1283,6 +1345,7 @@ body {
         .header__top__inner__left > a:hover {
           color: #fff; }
     .header__top__inner__right {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center; }
@@ -1292,6 +1355,66 @@ body {
         .header__top__inner__right__currency span {
           color: #ffffffb3;
           font-weight: 400; }
+        .header__top__inner__right__currency .tr {
+          animation: tr 2s infinite linear;
+          position: absolute;
+          top: 0;
+          left: 15px;
+          width: 100%;
+          margin-left: 0 !important;
+          opacity: 0;
+          transition: none !important;
+          animation-iteration-count: infinite !important; }
+
+@keyframes tr {
+  0% {
+    opacity: 1;
+    top: 0; }
+  10% {
+    opacity: 1;
+    top: -100%; }
+  11% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    top: 100%; }
+  51% {
+    opacity: 1; }
+  60% {
+    opacity: 1;
+    top: 30%; }
+  100% {
+    opacity: 1;
+    top: 30%; } }
+        .header__top__inner__right__currency .usd {
+          animation: usd 2s infinite linear;
+          position: absolute;
+          top: 0;
+          left: 15px;
+          width: 100%;
+          margin-left: 0 !important;
+          opacity: 0;
+          transition: none !important;
+          animation-iteration-count: infinite !important; }
+
+@keyframes usd {
+  0% {
+    opacity: 1;
+    top: 30%; }
+  10% {
+    opacity: 1;
+    top: 30%; }
+  50% {
+    opacity: 1;
+    top: 30%; }
+  60% {
+    opacity: 1;
+    top: -100%; }
+  61% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    top: 100%; } }
       .header__top__inner__right__phone {
         display: flex; }
         .header__top__inner__right__phone__number {
@@ -1433,6 +1556,12 @@ body {
 
 .customcalcmt {
   margin-top: 80px; }
+  .customcalcmt .range-content__heading {
+    width: 100%; }
+    .customcalcmt .range-content__heading input {
+      margin-right: 20px;
+      border-right: 1px solid white;
+      padding-right: 10px; }
   .customcalcmt .calculator {
     background-color: #31343b;
     border-radius: 8px; }
@@ -1477,6 +1606,10 @@ body {
         border-radius: 50%;
         background: #c9ffc7;
         margin-top: -4px; }
+      .customcalcmt .calculator .calc input::-webkit-outer-spin-button,
+      .customcalcmt .calculator .calc input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
       .customcalcmt .calculator .calc .range-content {
         margin-bottom: 32px; }
       .customcalcmt .calculator .calc .services {
@@ -2026,6 +2159,14 @@ body {
 .faq {
   margin-top: 4.375rem; }
 
+.flipwrapper h6 {
+  display: flex;
+  justify-content: space-between; }
+
+.accordion-body__heading h6 {
+  display: flex;
+  justify-content: space-between; }
+
 .faq-page-container {
   max-width: 960px;
   margin: auto; }
@@ -2419,6 +2560,14 @@ body {
         padding: 16px;
         color: #fff;
         background-color: #22252C; }
+      .myaccount .login-myaccount .login-content .toplabel {
+        position: absolute;
+        padding: 16px;
+        top: 10px;
+        left: 0;
+        font-size: 14px;
+        opacity: 0.5;
+        transition: top 0.2s; }
       .myaccount .login-myaccount .login-content .emailinput {
         position: relative; }
         .myaccount .login-myaccount .login-content .emailinput #email:focus + .emaillabel {
@@ -2429,7 +2578,7 @@ body {
           font-size: 14px;
           opacity: 0.5;
           transition: top 0.2s; }
-        .myaccount .login-myaccount .login-content .emailinput #email:focus {
+        .myaccount .login-myaccount .login-content .emailinput #email {
           padding-bottom: 5px; }
         .myaccount .login-myaccount .login-content .emailinput .emaillabel {
           position: absolute;
@@ -2447,7 +2596,7 @@ body {
           font-size: 14px;
           opacity: 0.5;
           transition: top 0.2s; }
-        .myaccount .login-myaccount .login-content .passinput #password:focus {
+        .myaccount .login-myaccount .login-content .passinput #password {
           padding-bottom: 5px; }
         .myaccount .login-myaccount .login-content .passinput .passlabel {
           position: absolute;
@@ -2653,7 +2802,7 @@ body {
         font-size: 14px;
         opacity: 0.5;
         transition: top 0.2s; }
-      .myregister .customloginaccount .emailinput #email:focus {
+      .myregister .customloginaccount .emailinput #email {
         padding-bottom: 5px; }
       .myregister .customloginaccount .emailinput .emaillabel {
         position: absolute;
@@ -2671,7 +2820,7 @@ body {
         font-size: 14px;
         opacity: 0.5;
         transition: top 0.2s; }
-      .myregister .customloginaccount .passinput #password:focus {
+      .myregister .customloginaccount .passinput #password {
         padding-bottom: 5px; }
       .myregister .customloginaccount .passinput .passlabel {
         position: absolute;
@@ -2682,6 +2831,15 @@ body {
         position: absolute;
         top: 37px;
         right: 19px; }
+
+.toplabel {
+  position: absolute;
+  padding: 16px;
+  top: 10px;
+  left: 0;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: top 0.2s; }
 
 @media screen and (max-width: 992px) {
   .registerpageregbtn {
@@ -2792,6 +2950,14 @@ body {
         top: 18px;
         left: 0;
         transition: top 0.2s; }
+    .contact .contact-right .toplabel {
+      position: absolute;
+      padding: 16px;
+      top: 10px;
+      left: 0;
+      font-size: 14px;
+      opacity: 0.5;
+      transition: top 0.2s; }
     .contact .contact-right .emailinput input {
       width: 100%;
       font-size: 1rem;
@@ -2815,7 +2981,7 @@ body {
         font-size: 14px;
         opacity: 0.5;
         transition: top 0.2s; }
-      .contact .contact-right .emailinput #email:focus {
+      .contact .contact-right .emailinput #email {
         padding-bottom: 5px; }
       .contact .contact-right .emailinput .emaillabel {
         position: absolute;

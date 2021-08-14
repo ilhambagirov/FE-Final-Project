@@ -2,6 +2,19 @@
     margin-top: 4.375rem;
 }
 
+.flipwrapper{
+    h6{
+        display: flex;
+    justify-content:  space-between;
+    }
+}
+.accordion-body__heading{
+    h6{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .faq-page-container{
     max-width: 960px;
     margin: auto;

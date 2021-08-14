@@ -144,6 +144,8 @@
         }
         padding: 24px 48px 40px 24px;
         width: calc(100% - 328px);
+
+        
         .emailinput input,
              .passinput input{
                 width: 100%;
@@ -159,6 +161,7 @@
                 color: #fff;
                 background-color: #22252C;
             }
+            
             .emailinput{
                 position: relative;
                 #email:focus+ .emaillabel
@@ -171,7 +174,7 @@
                         opacity: 0.5;
                         transition: top 0.2s;
                    }
-                   #email:focus{
+                   #email{
                        padding-bottom: 5px;
                    }
                 .emaillabel{
@@ -195,19 +198,15 @@
                      opacity: 0.5;
                      transition: top 0.2s;
                 }
-                #password:focus{
+                #password{
                     padding-bottom: 5px;
                 }
                 .passlabel{
-                position: absolute;
-                padding: 16px;
-                top: 21px;
-                left: 0;
-
-                
-
-                
-            }
+                 position: absolute;
+                 padding: 16px;
+                 top: 21px;
+                 left: 0;
+                 }
             i{
                 position: absolute;
                 top: 37px;
@@ -221,6 +220,17 @@
     }
 
     
+}
+
+.toplabel
+{
+     position: absolute;
+     padding: 16px;
+     top: 10px;
+     left: 0;
+     font-size: 14px;
+     opacity: 0.5;
+     transition: top 0.2s;
 }
 
 

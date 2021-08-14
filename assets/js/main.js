@@ -15,50 +15,10 @@ otherLangs.forEach(otherlang=>{
 })
 
 
-///slider dots
-
-$( function() {
-  
-    var $mainslider = $('.gallery').flickity({
-      pageDots: true
-    });
-  
-    var flickity = $mainslider.data('flickity');
-    
-    var $galleryNav = $('.flickity-page-dots');
-    var $galleryNavItems = $galleryNav.find('.flickity-page-dots .dot');
-    
-    $mainslider.on( 'select.flickity', function() {
-      $galleryNav.find('.is-selected').removeClass('is-selected');
-      $galleryNavItems.eq( flickity.selectedIndex ).addClass('is-selected');
-    });
-});
-  //calculator slider
-
-  
-(function range(){
-  
-  let rangevalues=document.querySelectorAll('#rangevalue')
-  let rangesliders=document.querySelectorAll('#rangeslider')
-  rangesliders.forEach(rangeslider=>{
-      rangeslider.addEventListener("input", function(e) {
-        rangevalues.forEach(rangevalue=>{
-        if (rangeslider.getAttribute('data-source')===rangevalue.getAttribute('data-target')) {
-          rangevalue.value = rangeslider.value;
-        }
-      });
-    })
-   
-  })
-})()
-
-
 //checkbox checker
-
-let service=document.querySelector('.services')
-let labels=service.querySelectorAll('label')
-let inputs=service.querySelectorAll('input')
-let ticks=service.querySelectorAll('.tickcustom')
+let labels=document.querySelectorAll('label')
+let inputs=document.querySelectorAll('input')
+let ticks=document.querySelectorAll('.tickcustom')
    inputs.forEach(input=>{
     input.addEventListener('click',e=>{
       ticks.forEach(tick=>{
@@ -71,6 +31,20 @@ let ticks=service.querySelectorAll('.tickcustom')
 })
 
 
+//chat popup
+
+let chat=document.querySelector('.popup-chat')
+let closechat=document.querySelector('.close-chat-x')
+
+let openchat=document.querySelector('.chat')
+
+openchat.onclick=function(){
+  chat.classList.toggle('activechat')
+}
+
+closechat.onclick=function(){
+  chat.classList.remove('activechat')
+}
 
 
 

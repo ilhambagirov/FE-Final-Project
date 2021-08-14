@@ -111,6 +111,17 @@
         }
 
         }
+
+        .toplabel
+               {
+                    position: absolute;
+                    padding: 16px;
+                    top: 10px;
+                    left: 0;
+                    font-size: 14px;
+                    opacity: 0.5;
+                    transition: top 0.2s;
+               }
      
         .emailinput input{
             width: 100%;
@@ -139,8 +150,8 @@
                     opacity: 0.5;
                     transition: top 0.2s;
                }
-               #email:focus{
-                   padding-bottom: 5px;
+               #email{
+                padding-bottom: 5px;
                }
             .emaillabel{
             position: absolute;

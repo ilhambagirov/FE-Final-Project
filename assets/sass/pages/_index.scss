@@ -110,6 +110,7 @@ body{
         }
 
         &__right{
+            position: relative;
             
             @include flexbox;
             &__currency{
@@ -118,6 +119,89 @@ body{
                 span{
                 color: $color-blur;
                 font-weight: 400;
+            }
+
+            .tr{
+                animation: tr 2s infinite linear;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                width: 100%;
+                margin-left: 0 !important;
+                opacity: 0;
+                transition: none !important;
+                animation-iteration-count: infinite !important;
+            }
+            @keyframes tr {
+                0%{
+                    opacity: 1;
+                    top: 0;
+                }
+                10%{
+                    opacity: 1;
+                    top: -100%;
+                }
+                11%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 0;
+                    top: 100%;
+                }
+                51%{
+                    opacity: 1;
+                }
+                60%{
+                    opacity: 1;
+                    top: 30%;
+                }
+                100%{
+                    opacity: 1;
+                    top: 30%;
+                }
+            
+            }
+            
+            
+
+            .usd{
+                animation: usd 2s infinite linear;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                width: 100%;
+                margin-left: 0 !important;
+                opacity: 0;
+                transition: none !important;
+                animation-iteration-count: infinite !important;
+            }
+            @keyframes usd {
+                0%{
+                    opacity: 1;
+                    top: 30%;
+                }
+                10%{
+                    opacity: 1;
+                    top: 30%;
+                }
+                50%{
+                    opacity: 1;
+                    top: 30%;
+                }
+                60%{
+                    opacity: 1;
+                    top: -100%;
+                }
+                61%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 0;
+                    top: 100%;
+                }
+            
+                
+            
             }
             }
 
@@ -334,6 +418,16 @@ body{
 //section Calculator
 
 .customcalcmt{
+
+
+    .range-content__heading{
+        width: 100%;
+        input{
+            margin-right:20px;
+            border-right: 1px solid white;
+            padding-right: 10px;
+        }
+    }
     margin-top: 80px;
    
     .calculator{
@@ -394,6 +488,12 @@ body{
                 margin-top: -4px;
 
               
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
             }
             .range-content{
             margin-bottom: 32px;
@@ -857,6 +957,8 @@ body{
         
     }
 }
+
+
  //Media screens
 
  @media screen and(max-width:1200px) {

@@ -69,6 +69,17 @@
                 background-color: #22252C;
             }
 
+            .toplabel
+            {
+                position: absolute;
+                padding: 16px;
+                top: 10px;
+                left: 0;
+                font-size: 14px;
+                opacity: 0.5;
+                transition: top 0.2s;
+            }
+
             .emailinput{
                 position: relative;
                 #email:focus+ .emaillabel
@@ -81,7 +92,7 @@
                         opacity: 0.5;
                         transition: top 0.2s;
                    }
-                   #email:focus{
+                   #email{
                        padding-bottom: 5px;
                    }
                 .emaillabel{
@@ -105,7 +116,7 @@
                      opacity: 0.5;
                      transition: top 0.2s;
                 }
-                #password:focus{
+                #password{
                     padding-bottom: 5px;
                 }
                 .passlabel{
