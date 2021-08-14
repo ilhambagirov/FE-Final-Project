@@ -3118,6 +3118,9 @@ body {
       padding: 16px !important;
       margin: 0 !important; } }
 
+.pagshops {
+  overflow-x: auto; }
+
 .shops {
   margin-top: 70px; }
   .shops .pageheading {
